@@ -1,9 +1,19 @@
-#userGreet {
-    font-size: 80px;
-    font-family: "Monoton" ;
+/* Setting a font here */
+@font-face {
+    font-family: terminalFont;
+    src: url("./font/PerfectDOSVGA437Win.ttf");
 }
 
-#secondaryText {
-    font-family: "IBM Plex Mono";
-    font-size: 30px;
+body {
+    background-color: #282828;
+    color: #00FF66;
 }
+
+#startScreen {
+    font-size: 20px;
+    /* font-family: "Monoton" ; */
+    font-family: terminalFont;
+    padding: 6%;
+}
+    /* font-family: "IBM Plex Mono"; */
+
