@@ -53,6 +53,9 @@ class startUpScreen extends Component {
         });
     }
 
+    // Method to handle input box changes
+
+
     render() {
         return (
             <div id="startScreen" className="container-fluid">
@@ -66,12 +69,10 @@ class startUpScreen extends Component {
                         </div>
 
                         <div>
-                            <p>>>Welcome User...</p>
-                        </div>
-                        <div>
-                            <p id="cursorContainer">>>Enter your name: <input type="text" className="userNameContainer"></input>
-                                <i></i>
-                            </p>
+                            <p className="userText">>> Welcome User...</p>
+                            <div id="cursorContainer">A> Enter your name:
+                            <input type="text" className="userNameContainer" autoFocus autoComplete="on"></input>
+                            </div>
                         </div>
                     </div>
                 </div>
