@@ -10,10 +10,50 @@ body {
 }
 
 #startScreen {
-    font-size: 20px;
-    /* font-family: "Monoton" ; */
+    font-size: 18px;
     font-family: terminalFont;
     padding: 6%;
 }
     /* font-family: "IBM Plex Mono"; */
 
+#infoParagraph{
+    margin-bottom: 5%;
+}
+
+.info {
+    margin: 0;
+}
+
+.userNameContainer {
+    background-color: #282828;
+    color: #00FF66;
+    caret-color: #00FF66;
+    border: none;
+    border-color: transparent;
+    outline: none;
+}
+
+#cursorContainer {
+    position: relative;
+}
+#cursorContainer i {
+    position: absolute;
+    width: 3px;
+    height: 80%;
+    background-color: #00FF66;
+    /* left: 1px; */
+    top: 10%;
+    animation-name: blinker;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+#cursor input:focus + i {
+    display: none;
+}
+
+@keyframes blinker {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
