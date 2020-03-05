@@ -1,0 +1,26 @@
+#startScreenContainer {
+    font-size: 18px;
+    font-family: "terminalFont";
+    padding: 6%;
+}
+
+#infoParagraph {
+    margin-bottom: 5%;
+}
+
+.userNameContainer {
+    background-color: #282828;
+    color: #00FF66;
+    caret-color: #00FF66;
+    border: 2px solid #282828;
+    border-bottom: 2px solid #00FF66;
+    outline: none;
+}
+
+.userNameContainer:focus {
+    border: 2px solid #282828;
+}
+
+.startScreenText {
+    margin: 0;
+}
