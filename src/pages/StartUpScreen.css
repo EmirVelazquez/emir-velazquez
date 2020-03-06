@@ -8,6 +8,17 @@
     margin-bottom: 5%;
 }
 
+#inputContainer{
+    white-space: nowrap;
+    margin: 0;
+    width: 100%;
+}
+
+#arrows{
+    display: inline-block;
+    margin: 0 16px 0 0;
+}
+
 .userNameContainer {
     background-color: #282828;
     color: #00FF66;
@@ -15,6 +26,8 @@
     border: 2px solid #282828;
     border-bottom: 2px solid #00FF66;
     outline: none;
+    width: 100%;
+    display: inline-block;
 }
 
 .userNameContainer:focus {
@@ -23,4 +36,9 @@
 
 .startScreenText {
     margin: 0;
+}
+
+/* Media Querie */
+@media (max-width: 600px) {
+    #startScreenContainer {font-size: 14px;}
 }

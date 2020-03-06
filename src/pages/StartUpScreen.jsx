@@ -13,7 +13,9 @@ class startUpScreen extends Component {
         userName: "",
         whenReady: "",
         userEnterSubmit: "",
-        inputShow: false
+        disableInput: false,
+        inputShow: false,
+        userEnteredName: false
     }
 
     // Only After the component mounts, run the methods
@@ -75,17 +77,25 @@ class startUpScreen extends Component {
             this.setState({ whenReady: "" })
             this.setState({ userEnterSubmit: "" })
         } else {
-            this.setState({ whenReady: ">> Press Enter When Ready" });
+            this.setState({ whenReady: ">> Press Enter" });
         }
     };
 
     // Method to handle input submission
     handleKeyDown = event => {
         if (event.key === "Enter" && this.state.userName !== "") {
+            // Grab user name trim it and make it all lowercase
+            let lowerName = this.state.userName.trim().toLowerCase();
+            // Capitalize only the first letter
+            let upperName = lowerName.charAt(0).toUpperCase() + lowerName.substring(1);
             // Save user name to local storage
-            console.log("User name is:" + this.state.userName.trim().toLocaleLowerCase());
-            // eslint-disable-next-line
-            this.setState({ userEnterSubmit: ">> Thank You " + `${this.state.userName},` + " Personalizing Your Experience..." })
+            localStorage.setItem("userName", upperName);
+            // Set state for next typist message
+            this.setState({
+                disableInput: true,
+                userEnterSubmit: ">> Thank You " + upperName,
+                userEnteredName: true
+            });
         }
     };
 
@@ -96,19 +106,50 @@ class startUpScreen extends Component {
     renderInputBox = () => {
         if (this.state.inputShow) {
             return (
-                <div>  >>  <input type="text"
+                <div id="inputContainer"><p id="arrows">>></p><input type="text"
                     value={this.state.userName}
                     name={"userName"}
                     onChange={this.handleInputChange}
                     onKeyPress={this.handleKeyDown}
                     className="userNameContainer"
+                    disabled={this.state.disableInput}
                     autoFocus>
                 </input>
                 </div>
             )
-        } else {
-            return null
         }
+        return null
+    }
+
+    renderEnterLine = () => {
+        if (this.state.whenReady !== "") {
+            return (
+                <Typist
+                    cursor={{ show: false }}
+                    avgTypingDelay={80}
+                    onTypingDone={null}>
+                    <p className="startScreenText">{this.state.whenReady}</p>
+                </Typist>
+            )
+        }
+        return null
+    }
+
+    renderLastLines = () => {
+        if (this.state.userEnteredName) {
+            return (
+                <Typist
+                    cursor={{ show: false }}
+                    avgTypingDelay={80}
+                    // Once last line is typed, route to portfolio page
+                    onTypingDone={null}>
+                    <p className="startScreenText">{this.state.userEnterSubmit}</p>
+                    <p className="startScreenText">>> Personalizing Your Experience</p>
+                    <p className="startScreenText">>> Have a good day</p>
+                </Typist>
+            )
+        }
+        return null
     }
 
     render() {
@@ -128,18 +169,20 @@ class startUpScreen extends Component {
                     <Col sm="12">
                         <Typist
                             cursor={{ show: false }}
-                            avgTypingDelay={90}
+                            avgTypingDelay={80}
                             onTypingDone={this.changeInputShowState}>
-                            <p className="startScreenText">  >> Welcome User</p>
-                            <p id="cursorContainer">  A> Enter Your First Name:</p>
+                            <p className="startScreenText">>> Welcome User</p>
+                            <p className="startScreenText">A> Enter Your First Name:</p>
                         </Typist>
-                        <this.renderInputBox />
+                        <div style={{ width: "30%" }}>
+                            <this.renderInputBox />
+                        </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col sm="12">
-                        <p>{this.state.whenReady}</p>
-                        <p className="startScreenText">{this.state.userEnterSubmit}</p>
+                        <this.renderEnterLine />
+                        <this.renderLastLines />
                     </Col>
                 </Row>
             </Container >
