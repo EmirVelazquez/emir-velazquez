@@ -1,0 +1,7 @@
+#portFolioContainer {
+    height: 100vh;
+    width: 100vw;
+    background-color: teal;
+    color: #FFFFFF;
+    padding: 6%;
+}

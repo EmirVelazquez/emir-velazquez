@@ -99,10 +99,12 @@ class startUpScreen extends Component {
         }
     };
 
+    // Method to handle input state
     changeInputShowState = () => {
         this.setState({ inputShow: true });
     }
 
+    // Method to return the rendering of the input box
     renderInputBox = () => {
         if (this.state.inputShow) {
             return (
@@ -121,6 +123,7 @@ class startUpScreen extends Component {
         return null
     }
 
+    // Method to handle the next typist message
     renderEnterLine = () => {
         if (this.state.whenReady !== "") {
             return (
@@ -135,6 +138,7 @@ class startUpScreen extends Component {
         return null
     }
 
+    // Method to handle the last typist message and send the user to portfolio
     renderLastLines = () => {
         if (this.state.userEnteredName) {
             return (
@@ -142,7 +146,7 @@ class startUpScreen extends Component {
                     cursor={{ show: false }}
                     avgTypingDelay={80}
                     // Once last line is typed, route to portfolio page
-                    onTypingDone={null}>
+                    onTypingDone={this.goToPortfolio}>
                     <p className="startScreenText">{this.state.userEnterSubmit}</p>
                     <p className="startScreenText">>> Personalizing Your Experience</p>
                     <p className="startScreenText">>> Have a good day</p>
@@ -152,6 +156,12 @@ class startUpScreen extends Component {
         return null
     }
 
+    // Method that reloads the page to serve up portfolio
+    goToPortfolio = () => {
+        window.location.reload();
+    }
+
+    // Render method that returns the component
     render() {
         return (
             <Container id="startScreenContainer" fluid={true}>
