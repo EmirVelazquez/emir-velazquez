@@ -149,7 +149,7 @@ class startUpScreen extends Component {
                     onTypingDone={this.goToPortfolio}>
                     <p className="startScreenText">{this.state.userEnterSubmit}</p>
                     <p className="startScreenText">>> Personalizing Your Experience</p>
-                    <p className="startScreenText">>> Have a good day</p>
+                    <p className="startScreenText">>> Have A Good Day</p>
                 </Typist>
             )
         }
