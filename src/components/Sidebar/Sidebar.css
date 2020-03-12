@@ -1,0 +1,77 @@
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #121212;
+  padding: 2.5em 1.5em 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  height: 35% !important;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #FFFFFF;
+  padding: 0.8em;
+  white-space: nowrap;
+}
+
+/* Individual item */
+.sidenavText  {
+  display: inline-block;
+  margin: 0 0 0 15px;
+}
+
+.iconHolder{
+    display: inline-block;
+    position: relative;
+}
+
+#personHolder{
+    width: 20px;
+    height: 20px;
+}
+
+#portfolioHolder{
+    width: 20px;
+    height: 17px;
+}
+
+#teamHolder {
+    width: 20px;
+    height: 12px;
+}
+
+#contactHolder{
+    width: 20px; 
+    height: 15px;
+}
+
+.sideBarIcons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Cross Icon item */
+.bm-cross:focus {
+    outline: none;
+}
+
+.sidebarButtons{
+    background-color: transparent;
+    margin: 0 0 10% 0;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+}
+
+.bm-cross-button{
+    width: 18px !important;
+    height: 18px !important;
+}

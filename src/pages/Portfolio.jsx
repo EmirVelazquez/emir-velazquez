@@ -4,6 +4,7 @@ import { Container, Row, Col } from "reactstrap";
 import "react-typist/dist/Typist.css";
 import TopNav from "../components/TopNav";
 import CityJumbotron from "../components/CityLandscape";
+import Sidebar from "../components/Sidebar";
 
 class Portfolio extends Component {
 
@@ -18,13 +19,16 @@ class Portfolio extends Component {
     }
 
     handleNavButtonClicked = () => {
-        console.log("Open Nav");
-        this.setState({ navOpen: !this.state.navOpen });
+        if (this.state.navOpen === false) {
+            this.setState({ navOpen: true })
+        }
+        console.log(this.state.navOpen)
     }
 
     render() {
         return (
             <React.Fragment>
+                <Sidebar sideBarStatus={this.state.navOpen}></Sidebar>
                 <TopNav navButtonClicked={this.handleNavButtonClicked}></TopNav>
                 <CityJumbotron whichUser={this.props.userFirstName}></CityJumbotron>
                 <Container id="portFolioContainer" fluid={true}>
