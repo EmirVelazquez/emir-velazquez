@@ -4,11 +4,12 @@ import "./TopNav.css";
 import EmirBrand from "../../assets/emirBrand.png";
 import MenuBars from "../../assets/menuBars.png";
 
-const TopNav = () => {
+const TopNav = props => {
     return (
         <Navbar id="topNavContainer" sticky={"top"}>
             <NavbarBrand id="menuContainer">
-                <Button id="navButton">
+                <Button id="navButton"
+                    onClick={props.navButtonClicked}>
                     <img src={MenuBars} style={{ width: 29, height: 20 }} alt="Menu Bars"></img>
                 </Button>
             </NavbarBrand>

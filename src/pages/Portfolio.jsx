@@ -1,34 +1,41 @@
-import React from "react";
+import React, { Component } from "react";
 import "./Portfolio.css";
 import { Container, Row, Col } from "reactstrap";
-import Typist from "react-typist";
 import "react-typist/dist/Typist.css";
-import TopNav from "../components/TopNav"
+import TopNav from "../components/TopNav";
+import CityJumbotron from "../components/CityLandscape";
 
-const Portfolio = props => {
+class Portfolio extends Component {
 
-    return (
-        <React.Fragment>
-            <TopNav></TopNav>
-            <Container id="portFolioContainer" fluid={true}>
-                <Row>
-                    <Col sm={"12"}>
-                        <h1>Hello {props.userFirstName},</h1>
-                        <h1>my name is Emir Velazquez</h1>
-                        <Typist cursor={{ show: false }}>
-                            <h2>I love to develop and collaborate.</h2>
-                            <Typist.Backspace count={34} delay={1000} />
-                            <h2>I'm a huge fan of design thinking.</h2>
-                            <Typist.Backspace count={34} delay={1000} />
-                            <h2>I enjoy getting things done.</h2>
-                        </Typist>
-                    </Col>
-                </Row>
-            </Container>
+    state = {
+        navOpen: false
+    }
 
-        </React.Fragment>
-    )
+    componentDidMount = () => {
+        // Create key value for local storage of default theme state
+        // localStorage.setItem("pageTheme", "retroWave");
+        console.log("Use to pull the theme save to local storage");
+    }
 
+    handleNavButtonClicked = () => {
+        console.log("Open Nav");
+        this.setState({ navOpen: !this.state.navOpen });
+    }
+
+    render() {
+        return (
+            <React.Fragment>
+                <TopNav navButtonClicked={this.handleNavButtonClicked}></TopNav>
+                <CityJumbotron whichUser={this.props.userFirstName}></CityJumbotron>
+                <Container id="portFolioContainer" fluid={true}>
+                    <Row>
+                        <Col sm={"12"}>
+                        </Col>
+                    </Row>
+                </Container>
+            </React.Fragment>
+        )
+    }
 }
 
 export default Portfolio;

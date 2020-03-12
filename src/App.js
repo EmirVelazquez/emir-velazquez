@@ -10,8 +10,6 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // Create key value for local storage of default theme (my need to move this to portfolio page)
-    localStorage.setItem("pageTheme", "retroWave");
     // Determine which page to load based on local storage results
     this.whichPageToLoad();
     // Get the get the user name from localStorage
@@ -45,8 +43,7 @@ class App extends Component {
         <Route exact path="/" render={props => (
           <Porfolio
             {...props}
-            userFirstName={this.state.userNameIs}
-            userThemeChoice={this.state.currentThemeIs}>
+            userFirstName={this.state.userNameIs}>
           </Porfolio>
         )}>
         </Route>
