@@ -4,6 +4,16 @@
     src: url("./font/IBM_BIOS.ttf");
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #000000;
+    height: 100vh;
+}
+
 a:link, a:visited, a:hover,a:focus,a:active{
     color: #FFFFFF;
     text-decoration: none;

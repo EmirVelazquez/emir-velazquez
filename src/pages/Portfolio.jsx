@@ -5,6 +5,7 @@ import "react-typist/dist/Typist.css";
 import TopNav from "../components/TopNav";
 import CityJumbotron from "../components/CityLandscape";
 import Sidebar from "../components/Sidebar";
+import Grid from "../components/Grid";
 
 class Portfolio extends Component {
 
@@ -35,8 +36,13 @@ class Portfolio extends Component {
                 <Container id="portFolioContainer" fluid={true}>
                     <Row>
                         <Col sm={"12"}>
+                            <h1>Testing</h1>
+                            <h2>Hello World</h2>
                         </Col>
                     </Row>
+                </Container>
+                <Container id="gridContainer" fluid={true}>
+                    <Grid></Grid>
                 </Container>
             </React.Fragment>
         )

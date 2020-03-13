@@ -1,0 +1,19 @@
+.grid {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0px, #00FFFF 0%, #00FFFF 3px, rgba(0, 0, 0, 0) 0px), linear-gradient(90deg, rgba(0, 0, 0, 0) 0px, #00FFFF 0%, #00FFFF 3px, rgba(0, 0, 0, 0) 0px); 
+    background-size: 4em 2em, 4em 2em;
+    background-color: black;
+    border-top: 3px solid #00FFFF;
+    box-shadow: 0 -55px 100px #00FFFF;
+    height: 33em;
+    transform: perspective(400px) rotateX(41deg) scale(2);
+    width: 100%;
+    text-align: center;
+}
+
+.grid:before {
+   background: radial-gradient(ellipse at center, rgba(0,0,0,0) 40%);     
+   content: '';
+   height: 100%;
+   position: absolute;
+   width: 100%;
+}
