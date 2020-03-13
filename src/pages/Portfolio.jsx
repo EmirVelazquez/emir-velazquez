@@ -19,16 +19,17 @@ class Portfolio extends Component {
     }
 
     handleNavButtonClicked = () => {
-        if (this.state.navOpen === false) {
-            this.setState({ navOpen: true })
-        }
-        console.log(this.state.navOpen)
+        this.setState({ navOpen: true })
+    }
+
+    handleCloseMenu = () => {
+        this.setState({ navOpen: false })
     }
 
     render() {
         return (
             <React.Fragment>
-                <Sidebar sideBarStatus={this.state.navOpen}></Sidebar>
+                <Sidebar sideBarStatus={this.state.navOpen} closeClicked={this.handleCloseMenu}></Sidebar>
                 <TopNav navButtonClicked={this.handleNavButtonClicked}></TopNav>
                 <CityJumbotron whichUser={this.props.userFirstName}></CityJumbotron>
                 <Container id="portFolioContainer" fluid={true}>

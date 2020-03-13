@@ -1,6 +1,6 @@
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 1);
 }
 
 /* General sidebar styles */
@@ -9,13 +9,25 @@
   padding: 2.5em 1.5em 0;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  height: 35% !important;
+  height: 350px !important;
+}
+
+#closeNavBtn {
+    position: absolute;
+    top: 1%;
+    right: 3%;
+    background-color: transparent;
+    border: none;
+}
+
+#closeNavBtn:focus {
+    outline: none;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
   color: #FFFFFF;
-  padding: 0.8em;
+  padding: 10% 0 0 0;
   white-space: nowrap;
 }
 
@@ -30,7 +42,7 @@
     position: relative;
 }
 
-#personHolder{
+#personHolder, #linkedInHolder, #gitHubHolder{
     width: 20px;
     height: 20px;
 }
@@ -74,4 +86,15 @@
 .bm-cross-button{
     width: 18px !important;
     height: 18px !important;
+}
+
+.navSeparator{
+    background-color: #575757;
+    margin: 0 0 10% 0;
+    opacity: 0.5;
+    height: 2px;
+}
+
+.socialLink{
+    padding: 1px 6px;
 }
