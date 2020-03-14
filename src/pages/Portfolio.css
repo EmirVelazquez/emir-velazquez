@@ -1,14 +1,13 @@
-#portFolioContainer{
-    display: grid;
-    place-items: "center";
+#aboutContainer{
     position: absolute;
     width: 100%;
     height: 50vh;
     top: 85%;
     z-index: 10;
-    background-color: #121212;
-    opacity: 0.8;
+    /* background-color: #121212;
+    opacity: 0.8; */
     color: #ffffff;
+    font-family: "Roboto", sans-serif;
 }
 
 #gridContainer {
@@ -17,8 +16,21 @@
     position: relative;
     background-color: #000000;
     color: #FFFFFF;
-    font-family: "Roboto", sans-serif;
     overflow: hidden;
+}
+
+#portFolioContainer {
+    height: 50vh;
+    margin: 0;
+}
+
+#footerContainer{
+    width: 100%;
+    height: 100px;
+    background-color: #121212;
+    position: relative;
+    top: 100%;
+    color: #FFFFFF;
 }
 
 /* font-family: 'Audiowide', cursive; */
