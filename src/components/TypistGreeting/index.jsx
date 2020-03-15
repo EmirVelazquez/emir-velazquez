@@ -6,7 +6,7 @@ const TypistGreeting = props => {
     return (
         <React.Fragment>
             <div id="userGreetingContainer">
-                <h1 className="userGrettingHeader">Hello {props.currentUserName},</h1>
+                <h1 className="userGrettingHeader">Hello <span className="usersNameText">{props.currentUserName},</span></h1>
                 <Typist cursor={{ show: false }}>
                     <h1 className="userGrettingHeader">my name is <span className="emphasisText">Emir Velazquez</span></h1>
                 </Typist>

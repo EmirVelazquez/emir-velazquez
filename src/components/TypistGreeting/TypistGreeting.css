@@ -1,17 +1,13 @@
 #userGreetingContainer {
     position: absolute;
     top: 2%;
-    left: 10%;
+    left: 8%;
 }
 
 .userGrettingHeader {
     color: #FFFFFF;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 500;
-}
-
-.emphasisText {
-    color: #00FFFF;
 }
 
 #typistGreetingContainer {
@@ -19,5 +15,4 @@
     top: 94%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #FFFFFF;
 }

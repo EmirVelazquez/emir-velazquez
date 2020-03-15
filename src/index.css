@@ -19,5 +19,14 @@ a:link, a:visited, a:hover,a:focus,a:active{
     text-decoration: none;
 }
 
+.emphasisText {
+    color: #00FFFF;
+}
+
+.usersNameText {
+    /* color: #bc13fe; */
+    color: rgb(245, 2, 87);
+}
+
 
 
