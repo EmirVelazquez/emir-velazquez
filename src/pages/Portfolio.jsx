@@ -6,6 +6,7 @@ import TopNav from "../components/TopNav";
 import CityJumbotron from "../components/CityLandscape";
 import Sidebar from "../components/Sidebar";
 import Grid from "../components/Grid";
+import AboutMe from "../components/AboutMe";
 
 class Portfolio extends Component {
 
@@ -36,9 +37,7 @@ class Portfolio extends Component {
                 <Container id="aboutContainer" fluid={true}>
                     <Row>
                         <Col sm={"12"}>
-                            <h1 style={{ opacity: 1 }}>About Me</h1>
-                            <p style={{ opacity: 1 }}>I'm a Full Stack Web Developer that believes in Design Thinking and has a humble belief that there is always something  new to learn from anyone. Most of my time is spent either working on a new project or learning a new technology to further my skills. I also enjoy spending time with my spouse and dogs, reading a good book, or traveling around the world.</p>
-                            <p style={{ opacity: 1 }}>Do you have any new ideas or projects you want help with? Contact me and lets get it done!</p>
+                            <AboutMe />
                         </Col>
                     </Row>
                 </Container>
@@ -47,6 +46,12 @@ class Portfolio extends Component {
                 </Container>
                 <Container id="portFolioContainer" fluid={true}>
                     <div>Portfolio</div>
+                </Container>"
+                <Container id="portFolioContainer" fluid={true}>
+                    <div>Collab</div>
+                </Container>"
+                <Container id="portFolioContainer" fluid={true}>
+                    <div>Contact</div>
                 </Container>"
                 <Container id="footerContainer" fluid={true}>
                     <footer >Footer</footer>
