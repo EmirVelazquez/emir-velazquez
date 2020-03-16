@@ -32,7 +32,7 @@
 }
 
 /* Individual item */
-.sidenavText  {
+.sidenavText, .socialText  {
   display: inline-block;
   margin: 0 0 0 15px;
 }
@@ -42,24 +42,106 @@
     position: relative;
 }
 
-#personHolder, #linkedInHolder, #gitHubHolder{
-    width: 20px;
+#personHolder, #linkedInHolder {
+    display: inline-block;
     height: 20px;
+    width: 20px;
+    background: transparent url("../../assets/person/personIcon.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 20px; /* Resize the background image to fit inside container */
 }
 
-#portfolioHolder{
+#personButton:hover #personHolder {
+    background: transparent url("../../assets/person/personHover.png");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 20px; /* Resize the background image to cover the entire container */
+}
+
+#portfolioHolder {
+    display: inline-block;
     width: 20px;
     height: 17px;
+    background: transparent url("../../assets/portfolio/portfolioIcon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 17px; 
+}
+
+#portfolioButton:hover #portfolioHolder {
+    background: transparent url("../../assets/portfolio/portfolioHover.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: 20px 17px; 
 }
 
 #teamHolder {
+    display: inline-block;
     width: 20px;
     height: 12px;
+    background: transparent url("../../assets/team/teamIcon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 12px; 
+}
+
+#teamButton:hover #teamHolder {
+    background: transparent url("../../assets/team/teamHover.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: 20px 12px; 
 }
 
 #contactHolder{
+    display: inline-block;
     width: 20px; 
     height: 15px;
+    background: transparent url("../../assets/contact/contactIcon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px 15px; 
+}
+
+#contactButton:hover #contactHolder {
+    background: transparent url("../../assets/contact/contactHover.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: 20px 15px; 
+}
+
+#gitHubHolder {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: transparent url("../../assets/github/gitHub.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px; 
+}
+
+#gitHubAnchor:hover #gitHubHolder {
+    background: transparent url("../../assets/github/gitHubHover.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: 20px 20px; 
+}
+
+#linkedInHolder {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background: transparent url("../../assets/linkedin/linkedIn.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px; 
+}
+
+#linkedInAnchor:hover #linkedInHolder {
+    background: transparent url("../../assets/linkedin/linkedInHover.png");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: 20px 20px; 
 }
 
 .sideBarIcons{
@@ -69,6 +151,7 @@
     width: 100%;
     height: 100%;
 }
+
 
 /* Cross Icon item */
 .bm-cross:focus {
@@ -81,6 +164,14 @@
     outline: none;
     border: none;
     color: #FFFFFF;
+}
+
+.sidebarButtons:hover {
+    color: #00FFFF;
+}
+
+.sidebarButtons:focus {
+    outline: none;
 }
 
 .bm-cross-button{
@@ -96,5 +187,18 @@
 }
 
 .socialLink{
+    background-color: transparent;
+    margin: 0 0 10% 0;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
     padding: 1px 6px;
+}
+
+.socialLink:focus {
+    outline: none;
+}
+
+.socialLink:hover {
+    color: #FF6725;
 }

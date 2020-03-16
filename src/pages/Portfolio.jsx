@@ -7,8 +7,6 @@ import CityJumbotron from "../components/CityLandscape";
 import Sidebar from "../components/Sidebar";
 import Grid from "../components/Grid";
 import AboutMe from "../components/AboutMe";
-// import ScrollAnimation from "react-animate-on-scroll";
-// import "../../node_modules/animate.css";
 
 class Portfolio extends Component {
 
@@ -45,13 +43,7 @@ class Portfolio extends Component {
                         </Col>
                     </Row>
                 </Container>
-                <Container id="aboutContainer" fluid={true}>
-                    <Row>
-                        <Col sm={"12"}>
-                            <AboutMe questionUser={this.props.userFirstName} />
-                        </Col>
-                    </Row>
-                </Container>
+                <AboutMe questionUser={this.props.userFirstName} />
                 <Container id="portFolioContainer" fluid={true}>
                     <div>Portfolio</div>
                 </Container>"

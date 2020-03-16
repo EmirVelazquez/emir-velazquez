@@ -1,11 +1,12 @@
 #aboutMeHolder {
     width: 100%;
     height: 100%;
-    position: relative;
+    padding: 0 8% 4% 8%;
+    background-color: #000000;
 }
 
 #aboutMeHeader{
-    margin: 2% 10% 0 0;
+    margin: 1% 0 0 0;
     font-weight: 600;
     color: #00ffff;
     font-size: 50px;
@@ -15,20 +16,29 @@
 
 #aboutSeparator {
     background-color: #575757;
-    margin: 0.5% 10% 0 8%;
+    margin: 0.5% 0 1% 0;
     opacity: 0.5;
     height: 2px;
 }
 
-#aboutMeTextContainer {
-    background-color: #121212;
-    padding: 1%;
-    position: absolute;
-    right: 30%;
-    margin: 2% 0 0 8%;
+#aboutMeTextContainer { 
+    padding: 10px;
 }
 
 .aboutMeText {
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 40px;
+}
+
+#portraitContainer {
+    align-self: center;
+    display: flex;
+    padding: 0;
+}
+
+#selfPortrait{
+    border: 10px solid #121212;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: 100%;
 }
