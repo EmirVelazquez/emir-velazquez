@@ -13,11 +13,6 @@ class PortfolioSection extends Component {
 
     componentDidMount = () => {
         this.setState({ CardData: AppData })
-        setTimeout(() => this.checkState(), 3000)
-    }
-
-    checkState = () => {
-        console.log(this.state.CardData[0].title);
     }
 
     render() {
@@ -34,7 +29,18 @@ class PortfolioSection extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <PortfolioCard />
+                        {this.state.CardData.map((card, i) => (
+                            <PortfolioCard
+                                key={"Project: " + i}
+                                projectId={card.id}
+                                projectTitle={card.title}
+                                projectGithub={card.github}
+                                projectLink={card.appLink}
+                                projectImage={card.appImage}
+                                projectColor={card.backgroundColor}
+                                projectDescription={card.description}
+                            />
+                        ))}
                     </Row>
                 </ScrollAnimation>
             </Container>
