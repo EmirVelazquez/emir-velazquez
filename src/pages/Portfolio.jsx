@@ -7,6 +7,7 @@ import CityJumbotron from "../components/CityLandscape";
 import Sidebar from "../components/Sidebar";
 import Grid from "../components/Grid";
 import AboutMe from "../components/AboutMe";
+import PorfolioSection from "../components/PortfolioSection";
 
 class Portfolio extends Component {
 
@@ -44,9 +45,7 @@ class Portfolio extends Component {
                     </Row>
                 </Container>
                 <AboutMe questionUser={this.props.userFirstName} />
-                <Container id="portFolioContainer" fluid={true}>
-                    <div>Portfolio</div>
-                </Container>"
+                <PorfolioSection />
                 <Container id="portFolioContainer" fluid={true}>
                     <div>Collab</div>
                 </Container>"

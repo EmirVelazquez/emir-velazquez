@@ -16,7 +16,7 @@ class App extends Component {
     const currentUser = localStorage.getItem("userName");
     // Conditional to pass props down to Porfolio child component
     if (currentUser === null) {
-      console.log("No User Name Exists.")
+      console.log("Go ahead and enter your first name.")
       console.log("If you are reading this, let's get in touch. I am looking for opportunities.");
     } else {
       console.log("You are a curious one, that's great.");

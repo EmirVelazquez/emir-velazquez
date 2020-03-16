@@ -1,0 +1,10 @@
+#testCase {
+    background-color: #121212;
+    padding: 10px;
+    height: 60vh;
+}
+
+#portfolioImageContainer{
+    height: 60%;
+    background-color: violet;
+}

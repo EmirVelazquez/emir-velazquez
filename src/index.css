@@ -24,8 +24,14 @@ a:link, a:visited, a:hover,a:focus,a:active{
 }
 
 .usersNameText {
-    /* color: #bc13fe; */
-    color: rgb(245, 2, 87);
+    color: #D3024A;
+}
+
+.sectionsSeparator {
+    background-color: #575757;
+    margin: 0.5% 0 1% 0;
+    opacity: 0.5;
+    height: 2px;
 }
 
 
