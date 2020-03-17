@@ -16,9 +16,7 @@ class Portfolio extends Component {
     }
 
     componentDidMount = () => {
-        // Create key value for local storage of default theme state
-        // localStorage.setItem("pageTheme", "retroWave");
-        console.log("Use to pull the theme save to local storage");
+        console.log("Portfolio Page Mounted");
     }
 
     handleNavButtonClicked = () => {

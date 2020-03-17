@@ -4,35 +4,71 @@
         "title": "Bookworm",
         "github": "https://github.com/EmirVelazquez/bookworm",
         "appLink": "https://frozen-dusk-16908.herokuapp.com/",
-        "appImage": "https://drive.google.com/uc?id=1u-8Is-K7UQeV0h2fjK_43vxUpKPrvJEJ",
-        "backgroundColor": "#509CB1",
-        "description": "Full stack web application that allows users to search for any book and then save them to a Mongo Database. The web application has a search box for the searches and a home page that displays the results. The saved path allows users to view the current saved books in the database."
+        "appImage": "/bookworm.png",
+        "backgroundColor": "#EFEFEF",
+        "description": "Full stack web application that allows users to search for any book and then save them to a Mongo Database. The web application has a search box for the searches and a home page that displays the results. The saved path allows users to view the current saved books in the database.",
+        "technologies": [
+            "react",
+            "axios",
+            "dotenv",
+            "express",
+            "mongodb",
+            "css",
+            "html",
+            "materialize",
+            "googleapi"
+        ]
     },
     {
         "id": 2,
-        "title": "Gargoyles",
-        "github": "https://github.com/EmirVelazquez/gargoyles",
-        "appLink": "https://emirvelazquez.github.io/gargoyles/",
-        "appImage": "https://drive.google.com/uc?id=1tfvJSvhtpS7b_C1NvaLAcAsG69QiZSlQ",
-        "backgroundColor": "#A93E63",
-        "description": "A card shuffle game, built with React, that is based on the 90's cartoon Gargoyles. The game starts by clicking on any card, then the cards are reshuffled and the user must not click on the same card twice. The inspiration behind this was in memory of my brother Ivan, who loved this cartoon and also made me really love it too."
-    },
-    {
-        "id": 3,
         "title": "Newsgram",
         "github": "https://github.com/EmirVelazquez/newsgram",
         "appLink": "https://blooming-beach-68349.herokuapp.com/",
-        "appImage": "https://drive.google.com/uc?id=15qcVtYqC_QOfV_NzsEhSAUx9H9s_vB_i",
-        "backgroundColor": "#724D7C",
-        "description": "Full stack web app that fetches local articles from The Dallas Morning News and allows users to save the articles they want. Articles are saved on a Mongo Database, and also allow the user to save notes for an article. This was built using JavaScript and jQuery."
+        "appImage": "/newsgram.png",
+        "backgroundColor": "#EFEFEF",
+        "description": "Full stack web app that fetches local articles from The Dallas Morning News and allows users to save the articles they want. Articles are saved on a Mongo Database, and also allow the user to save notes for an article. This was built using JavaScript and jQuery",
+        "technologies": [
+            "axios",
+            "mongodb",
+            "dotenv",
+            "express",
+            "handlebars",
+            "html",
+            "css",
+            "bootstrap",
+            "cheerio"
+        ]
     },
     {
         "id": 3,
+        "title": "Gargoyles",
+        "github": "https://github.com/EmirVelazquez/gargoyles",
+        "appLink": "https://emirvelazquez.github.io/gargoyles/",
+        "appImage": "/gargoyles.png",
+        "backgroundColor": "#EFEFEF",
+        "description": "A card shuffle game, built with React, that is based on the 90's cartoon Gargoyles. The game starts by clicking on any card, then the cards are reshuffled and the user must not click on the same card twice. The inspiration behind this was in memory of my brother Ivan, who loved this cartoon and also made me really love it too.",
+        "technologies": [
+            "react",
+            "css",
+            "html",
+            "bootstrap"
+        ]
+    },
+    {
+        "id": 4,
         "title": "Tacos",
         "github": "https://github.com/EmirVelazquez/tacos",
         "appLink": "https://secure-ravine-58830.herokuapp.com/",
-        "appImage": "https://drive.google.com/uc?id=15f7-KtZtGTyztSz2glxPTn7VQGCyx5Je",
-        "backgroundColor": "#BF7250",
-        "description": "Created a taco order logger for a mock taqueria that utilizes MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML."
+        "appImage": "/tacos.png",
+        "backgroundColor": "#EFEFEF",
+        "description": "Created a taco order logger for a mock taqueria that utilizes MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+        "technologies": [
+            "express",
+            "bootstrap",
+            "mysql",
+            "express",
+            "handlebars",
+            "dotenv"
+        ]
     }
 ]

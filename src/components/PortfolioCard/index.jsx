@@ -18,10 +18,18 @@ const PortfolioCard = props => {
                         {props.projectDescription}
                     </CardText>
                     <CardSubtitle className="projectTechnologies">Technologies</CardSubtitle>
-                    <br></br>
-                    <a href={props.projectGithub} target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <br></br>
-                    <a href={props.projectLink} target="_blank" rel="noopener noreferrer">Live App</a>
+                    <div className="techImgContainer">
+                        {props.projectTechnology.map((technology, i) => (
+                            <p key={i} className="testTech">
+                                {technology}
+                            </p>
+                        ))}
+                    </div>
+                    <CardSubtitle className="projectLinks">Links</CardSubtitle>
+                    <CardText className="appLinkContainer">
+                        <a href={props.projectGithub} target="_blank" rel="noopener noreferrer" className="appButtons">GitHub</a>
+                        <a href={props.projectLink} target="_blank" rel="noopener noreferrer" className="appButtons">Live App</a>
+                    </CardText>
                 </CardBody>
             </Card>
         </Col>
