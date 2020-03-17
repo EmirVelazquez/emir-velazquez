@@ -4,19 +4,21 @@
         "title": "Bookworm",
         "github": "https://github.com/EmirVelazquez/bookworm",
         "appLink": "https://frozen-dusk-16908.herokuapp.com/",
-        "appImage": "/bookworm.png",
+        "appImage": "/bookwormLogo.png",
         "backgroundColor": "#EFEFEF",
         "description": "Full stack web application that allows users to search for any book and then save them to a Mongo Database. The web application has a search box for the searches and a home page that displays the results. The saved path allows users to view the current saved books in the database.",
         "technologies": [
-            "react",
-            "axios",
-            "dotenv",
-            "express",
-            "mongodb",
-            "css",
-            "html",
-            "materialize",
-            "googleapi"
+            "React",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "MongoDB",
+            "Node.js",
+            "Express.js",
+            "Axios",
+            ".env",
+            "Materialize",
+            "Google API's"
         ]
     },
     {
@@ -24,19 +26,21 @@
         "title": "Newsgram",
         "github": "https://github.com/EmirVelazquez/newsgram",
         "appLink": "https://blooming-beach-68349.herokuapp.com/",
-        "appImage": "/newsgram.png",
+        "appImage": "/newsgramLogo.png",
         "backgroundColor": "#EFEFEF",
         "description": "Full stack web app that fetches local articles from The Dallas Morning News and allows users to save the articles they want. Articles are saved on a Mongo Database, and also allow the user to save notes for an article. This was built using JavaScript and jQuery",
         "technologies": [
-            "axios",
-            "mongodb",
-            "dotenv",
-            "express",
-            "handlebars",
-            "html",
-            "css",
-            "bootstrap",
-            "cheerio"
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Bootstrap",
+            "MongoDB",
+            "Node.js",
+            "Express.js",
+            "Axios",
+            ".env",
+            "Handlebars",
+            "Cheerio"
         ]
     },
     {
@@ -44,14 +48,15 @@
         "title": "Gargoyles",
         "github": "https://github.com/EmirVelazquez/gargoyles",
         "appLink": "https://emirvelazquez.github.io/gargoyles/",
-        "appImage": "/gargoyles.png",
+        "appImage": "/gargoylesLogo.png",
         "backgroundColor": "#EFEFEF",
         "description": "A card shuffle game, built with React, that is based on the 90's cartoon Gargoyles. The game starts by clicking on any card, then the cards are reshuffled and the user must not click on the same card twice. The inspiration behind this was in memory of my brother Ivan, who loved this cartoon and also made me really love it too.",
         "technologies": [
-            "react",
-            "css",
-            "html",
-            "bootstrap"
+            "React",
+            "CSS",
+            "HTML",
+            "Bootstrap",
+            "JavaScript"
         ]
     },
     {
@@ -59,16 +64,19 @@
         "title": "Tacos",
         "github": "https://github.com/EmirVelazquez/tacos",
         "appLink": "https://secure-ravine-58830.herokuapp.com/",
-        "appImage": "/tacos.png",
+        "appImage": "/elApacheLogo.png",
         "backgroundColor": "#EFEFEF",
         "description": "Created a taco order logger for a mock taqueria that utilizes MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
         "technologies": [
-            "express",
-            "bootstrap",
-            "mysql",
-            "express",
-            "handlebars",
-            "dotenv"
+            "Express.js",
+            "Node.js",
+            "Bootstrap",
+            "MySQL",
+            "Handlebars",
+            ".env",
+            "JavaScript",
+            "CSS",
+            "HTML"
         ]
     }
 ]

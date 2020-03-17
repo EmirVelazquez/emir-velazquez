@@ -12,11 +12,11 @@
 
 .projectPng{
     position: absolute;
+    top: 50%;
     left: 50%;
-    bottom: 0;
     max-width: 95%;
     max-height: 95%;
-    transform: translate(-50%);
+    transform: translate(-50%, -50%);
     box-shadow: 0px -10px 20px rgba(18, 18, 18, 0.54);
 }
 
@@ -36,42 +36,24 @@
     font-size: 20px;
 }
 
+.techImgContainer{
+    text-align: center;
+    height: 30%;
+    margin: 2% 0 2% 0;
+}
+
 .projectLinks {
-    text-align: end;
+    position: absolute;
+    right: 2.5%;
+    bottom: 4%;
     color: #00FFFF;
     font-size: 20px;
 }
-/* ========================================= */
-.techImgContainer{
-    /* overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    width: 100%; */
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: hidden;
-}
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.techImgContainer::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE and Edge */
-.techImgContainer {
-  -ms-overflow-style: none;
-}
-
-.testTech {
-    /* display: inline-block; */
-    margin: 0 10px 0 0;
-    flex: 0 0 auto;
-}
-/* ========================================= */
 .appLinkContainer {
-    text-align: end;
-    white-space: nowrap;
-    width: 100%;
+    position: absolute;
+    right: 2.5%;
+    bottom: 0.5%;
 }
 
 .appButtons {

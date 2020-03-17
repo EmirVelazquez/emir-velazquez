@@ -14,11 +14,6 @@ class PortfolioSection extends Component {
 
     componentDidMount = () => {
         this.setState({ CardData: AppData })
-        setTimeout(() => this.checkNewState(), 2000)
-    }
-
-    checkNewState = () => {
-        console.log(this.state.CardData);
     }
 
     render() {
