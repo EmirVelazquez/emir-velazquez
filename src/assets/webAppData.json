@@ -31,6 +31,7 @@
         "description": "Full stack web app that fetches local articles from The Dallas Morning News and allows users to save the articles they want. Articles are saved on a Mongo Database, and also allow the user to save notes for an article. This was built using JavaScript and jQuery",
         "technologies": [
             "JavaScript",
+            "jQuery",
             "HTML",
             "CSS",
             "Bootstrap",
@@ -53,10 +54,11 @@
         "description": "A card shuffle game, built with React, that is based on the 90's cartoon Gargoyles. The game starts by clicking on any card, then the cards are reshuffled and the user must not click on the same card twice. The inspiration behind this was in memory of my brother Ivan, who loved this cartoon and also made me really love it too.",
         "technologies": [
             "React",
-            "CSS",
+            "JavaScript",
             "HTML",
+            "CSS",
             "Bootstrap",
-            "JavaScript"
+            "Node.js"
         ]
     },
     {
@@ -68,15 +70,16 @@
         "backgroundColor": "#EFEFEF",
         "description": "Created a taco order logger for a mock taqueria that utilizes MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
         "technologies": [
-            "Express.js",
-            "Node.js",
+            "JavaScript",
+            "jQuery",
+            "HTML",
+            "CSS",
             "Bootstrap",
             "MySQL",
-            "Handlebars",
+            "Node.js",
+            "Express.js",
             ".env",
-            "JavaScript",
-            "CSS",
-            "HTML"
+            "Handlebars"
         ]
     }
 ]

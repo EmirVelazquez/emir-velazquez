@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Col } from "reactstrap";
 import "./Tech.css";
 import ReactLogo from "../../assets/techLogos/reactLogo.png";
 import ExpressLogo from "../../assets/techLogos/expressLogo.png";
@@ -15,6 +16,7 @@ import HandlebarsLogo from "../../assets/techLogos/handlebarsLogo.png";
 import CheerioLogo from "../../assets/techLogos/cheerioLogo.png";
 import BootstrapLogo from "../../assets/techLogos/bootstrapLogo.png";
 import JavascriptLogo from "../../assets/techLogos/javaScriptLogo.png";
+import JqueryLogo from "../../assets/techLogos/jqueryLogo.png";
 
 
 class Tech extends Component {
@@ -58,12 +60,16 @@ class Tech extends Component {
             return CheerioLogo;
         } else if (this.state.Logopic === "Bootstrap") {
             return BootstrapLogo;
+        } else {
+            return JqueryLogo;
         }
     }
 
     render() {
         return (
-            <img src={this.whichImageToUse()} alt="Technology Logo" className="techImage" />
+            <Col sm={"2"} className="techImageWrapper">
+                <img src={this.whichImageToUse()} alt="Technology Logo" className="techImage" />
+            </Col>
         )
     }
 }
