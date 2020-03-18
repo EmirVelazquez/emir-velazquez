@@ -1,35 +1,35 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
-import "./PortfolioSection.css";
+import "./Collab.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../../node_modules/animate.css";
 import PortfolioCard from "../PortfolioCard";
-const AppData = require("../../assets/webAppData.json")
+const CollabData = require("../../assets/collabAppData.json");
 
-class PortfolioSection extends Component {
+class CollabSection extends Component {
     state = {
-        CardData: []
+        cardCollab: []
     }
 
     componentDidMount = () => {
-        this.setState({ CardData: AppData })
+        this.setState({ cardCollab: CollabData })
     }
 
     render() {
         return (
-            <Container fluid={true} id="portFolioSection">
+            <Container fluid={true} id="collabSection">
                 <ScrollAnimation
-                    animateIn="fadeInUp"
+                    animateIn="fadeInRight"
                     animateOnce={true}
                 >
                     <Row>
                         <Col sm={"12"} style={{ padding: 0 }} >
-                            <h1 id="portFolioHeader">Portfolio</h1>
+                            <h1 id="collabHeader">Collab</h1>
                             <div className="sectionsSeparator"></div>
                         </Col>
                     </Row>
                     <Row>
-                        {this.state.CardData.map((card, i) => (
+                        {this.state.cardCollab.map((card, i) => (
                             <PortfolioCard
                                 key={i}
                                 projectId={card.id}
@@ -49,4 +49,4 @@ class PortfolioSection extends Component {
     }
 }
 
-export default PortfolioSection;
+export default CollabSection;

@@ -8,6 +8,7 @@ import Sidebar from "../components/Sidebar";
 import Grid from "../components/Grid";
 import AboutMe from "../components/AboutMe";
 import PorfolioSection from "../components/PortfolioSection";
+import CollabSection from "../components/CollabSection";
 
 class Portfolio extends Component {
 
@@ -44,9 +45,7 @@ class Portfolio extends Component {
                 </Container>
                 <AboutMe questionUser={this.props.userFirstName} />
                 <PorfolioSection />
-                <Container id="portFolioContainer" fluid={true}>
-                    <div>Collab</div>
-                </Container>"
+                <CollabSection />
                 <Container id="portFolioContainer" fluid={true}>
                     <div>Contact</div>
                 </Container>"
