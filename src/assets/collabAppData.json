@@ -1,85 +1,38 @@
 [
     {
         "id": 1,
-        "title": "Bookworm",
-        "github": "https://github.com/EmirVelazquez/bookworm",
-        "appLink": "https://frozen-dusk-16908.herokuapp.com/",
-        "appImage": "/bookwormLogo.png",
+        "title": "Sentinel",
+        "github": "https://github.com/EmirVelazquez/sentinel",
+        "appLink": "",
+        "appImage": "/sentinelLogo.png",
         "backgroundColor": "#EFEFEF",
-        "description": "Full stack web application that allows users to search for any book and then save them to a Mongo Database. The web application has a search box for the searches and a home page that displays the results. The saved path allows users to view the current saved books in the database.",
-        "technologies": [
-            "React",
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "MongoDB",
-            "Node.js",
-            "Express.js",
-            "Axios",
-            ".env",
-            "Materialize",
-            "Google API's"
-        ]
+        "description": "Sentinel is a React Native mobile app built by a team of 5, including myself, that allows a user to keep track of people in his/her group. I designed the app by incorporating Design Thinking. Mainly worked on building the front end from top to bottom by learning React Native in about a week. I also assisted my teammate with geolocation and Google Maps API for the map service."
     },
     {
         "id": 2,
-        "title": "Newsgram",
-        "github": "https://github.com/EmirVelazquez/newsgram",
-        "appLink": "https://blooming-beach-68349.herokuapp.com/",
-        "appImage": "/newsgramLogo.png",
+        "title": "a.l.f.r.e.d",
+        "github": "",
+        "appLink": "https://visualstorageintelligence.com/ai-hackathon-finals/",
+        "appImage": "/alfredLogo.png",
         "backgroundColor": "#EFEFEF",
-        "description": "Full stack web app that fetches local articles from The Dallas Morning News and allows users to save the articles they want. Articles are saved on a Mongo Database, and also allow the user to save notes for an article. This was built using JavaScript and jQuery.",
-        "technologies": [
-            "JavaScript",
-            "jQuery",
-            "HTML",
-            "CSS",
-            "Bootstrap",
-            "MongoDB",
-            "Node.js",
-            "Express.js",
-            "Axios",
-            ".env",
-            "Handlebars",
-            "Cheerio"
-        ]
+        "description": "1st place win in Visual Storage Intelligence's first annual Ai Hackathon. Our Team !False, had 7 days to present a solution for automating a time consuming manual report that goes out weekly to the company's clients. I personally handled the design of the front end and built it using jQuery, Bootstrap, HTML, & CSS. Additionally I designed, built the email template, and used Nodemailer to handle the automation of emails."
     },
     {
         "id": 3,
-        "title": "Gargoyles",
-        "github": "https://github.com/EmirVelazquez/gargoyles",
-        "appLink": "https://emirvelazquez.github.io/gargoyles/",
-        "appImage": "/gargoylesLogo.png",
+        "title": "Shelve It",
+        "github": "https://github.com/1Fungi99/Shelve-It",
+        "appLink": "https://ancient-beach-76628.herokuapp.com/",
+        "appImage": "/shelveitLogo.png",
         "backgroundColor": "#EFEFEF",
-        "description": "A card shuffle game, built with React, that is based on the 90's cartoon Gargoyles. The game starts by clicking on any card, then the cards are reshuffled and the user must not click on the same card twice. The inspiration behind this was in memory of my brother Ivan, who loved this cartoon and also made me really love it too.",
-        "technologies": [
-            "React",
-            "JavaScript",
-            "HTML",
-            "CSS",
-            "Bootstrap",
-            "Node.js"
-        ]
+        "description": "Full stack application that allows amateur authors to write and publish their work for other users to read them. My completed duties consisted of building the backend with MySQL, Node, and Express. I also wrote the C.R.U.D operations and utilized Quill.js for the editor page that I designed and built."
     },
     {
         "id": 4,
-        "title": "Tacos",
-        "github": "https://github.com/EmirVelazquez/tacos",
-        "appLink": "https://secure-ravine-58830.herokuapp.com/",
-        "appImage": "/elApacheLogo.png",
+        "title": "Taste Buds",
+        "github": "https://github.com/graysonm23/Taste-Buds",
+        "appLink": "https://graysonm23.github.io/Taste-Buds/",
+        "appImage": "/tastebudsLogo.png",
         "backgroundColor": "#EFEFEF",
-        "description": "Created a taco order logger for a mock taqueria that utilizes MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
-        "technologies": [
-            "JavaScript",
-            "jQuery",
-            "HTML",
-            "CSS",
-            "Bootstrap",
-            "MySQL",
-            "Node.js",
-            "Express.js",
-            ".env",
-            "Handlebars"
-        ]
+        "description": "Application for users who love food that enables them to get recipes, how-to videos, and restaurant locations for a searched dish name. My assigned part involved getting the how-to cook videos done which I completed using Google's Youtube API. I successfully fetched the data necessary and implemented the logic to have the Youtube player in our app."
     }
 ]

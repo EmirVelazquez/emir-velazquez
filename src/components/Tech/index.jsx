@@ -17,6 +17,15 @@ import CheerioLogo from "../../assets/techLogos/cheerioLogo.png";
 import BootstrapLogo from "../../assets/techLogos/bootstrapLogo.png";
 import JavascriptLogo from "../../assets/techLogos/javaScriptLogo.png";
 import JqueryLogo from "../../assets/techLogos/jqueryLogo.png";
+import ReactNative from "../../assets/techLogos/reactNative.png";
+import Sequelize from "../../assets/techLogos/sequelizeLogo.png";
+import Bcrypt from "../../assets/techLogos/bcryptLogo.png";
+import ExpoLogo from "../../assets/techLogos/expoLogo.png";
+import FigmaLogo from "../../assets/techLogos/figmaLogo.png";
+import JwtLogo from "../../assets/techLogos/jwtLogo.png";
+import TensorFlow from "../../assets/techLogos/tensorFlowLogo.png";
+import Nodemailer from "../../assets/techLogos/nodemailerLogo.png";
+import QuillLogo from "../../assets/techLogos/quillLogo.png";
 
 
 class Tech extends Component {
@@ -60,6 +69,27 @@ class Tech extends Component {
             return CheerioLogo;
         } else if (this.state.Logopic === "Bootstrap") {
             return BootstrapLogo;
+        } else if (this.state.Logopic === "React Native") {
+            return ReactNative;
+        } else if (this.state.Logopic === "Sequelize") {
+            return Sequelize;
+        } else if (this.state.Logopic === "Bcrypt") {
+            return Bcrypt;
+        } else if (this.state.Logopic === "Expo") {
+            return ExpoLogo;
+        } else if (this.state.Logopic === "Figma") {
+            return FigmaLogo;
+        } else if (this.state.Logopic === "JSON Webtoken") {
+            return JwtLogo;
+        }
+        else if (this.state.Logopic === "Tensorflow") {
+            return TensorFlow;
+        }
+        else if (this.state.Logopic === "Nodemailer") {
+            return Nodemailer;
+        }
+        else if (this.state.Logopic === "Quill.js") {
+            return QuillLogo;
         } else {
             return JqueryLogo;
         }

@@ -1,7 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Card, CardText, CardTitle, CardImg, CardSubtitle, UncontrolledTooltip } from "reactstrap";
+import { Container, Row, Col, Card, CardText, CardTitle, CardImg, UncontrolledTooltip } from "reactstrap";
 import "./PortfolioCard.css";
-import Tech from "../Tech";
 import GitHubBlack from "../../assets/github/githubBlack.png";
 import NewTab from "../..//assets/newTab.png";
 // import { useSpring, animated } from 'react-spring'
@@ -23,7 +22,7 @@ const PortfolioCard = props => {
                         </Col>
                     </Row>
                 </Container>
-                <Container fluid={true} style={{ paddingLeft: "2.5%", paddingRight: "2.5%" }}>
+                <Container fluid={true} style={{ paddingLeft: "2.5%", paddingRight: "2.5%", paddingBottom: "2.5%" }}>
                     <Row>
                         <Col sm="12">
                             <CardTitle className="projectTitle">
@@ -37,19 +36,6 @@ const PortfolioCard = props => {
                                 {props.projectDescription}
                             </CardText>
                         </Col>
-                    </Row>
-                    <Row>
-                        <Col sm="12" style={{ marginTop: "5%" }}>
-                            <CardSubtitle className="projectTechnologies">Technologies</CardSubtitle>
-                        </Col>
-                    </Row>
-                    <Row style={{ paddingRight: "2.5%", paddingLeft: "2.5%", marginBottom: "5%" }}>
-                        {props.projectTechnology.map((technologyName, i) => (
-                            <Tech
-                                key={i}
-                                whichTech={technologyName}
-                            />
-                        ))}
                     </Row>
                 </Container>
             </Card>

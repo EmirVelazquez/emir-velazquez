@@ -3,7 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import "./Collab.css";
 import ScrollAnimation from "react-animate-on-scroll";
 import "../../../node_modules/animate.css";
-import PortfolioCard from "../PortfolioCard";
+import CollabCard from "../CollabCard";
 const CollabData = require("../../assets/collabAppData.json");
 
 class CollabSection extends Component {
@@ -19,7 +19,7 @@ class CollabSection extends Component {
         return (
             <Container fluid={true} id="collabSection">
                 <ScrollAnimation
-                    animateIn="fadeInRight"
+                    animateIn="fadeInUp"
                     animateOnce={true}
                 >
                     <Row>
@@ -29,17 +29,17 @@ class CollabSection extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        {this.state.cardCollab.map((card, i) => (
-                            <PortfolioCard
+                        {this.state.cardCollab.map((collabCard, i) => (
+                            <CollabCard
                                 key={i}
-                                projectId={card.id}
-                                projectTitle={card.title}
-                                projectGithub={card.github}
-                                projectLink={card.appLink}
-                                projectImage={require("../../assets/projectPngs" + card.appImage)}
-                                projectColor={card.backgroundColor}
-                                projectDescription={card.description}
-                                projectTechnology={card.technologies}
+                                collabId={"collab" + collabCard.id}
+                                collabTitle={collabCard.title}
+                                collabGithub={collabCard.github}
+                                collabLink={collabCard.appLink}
+                                collabImage={require("../../assets/collabPngs" + collabCard.appImage)}
+                                collabColor={collabCard.backgroundColor}
+                                collabDescription={collabCard.description}
+                                collabTechnology={collabCard.technologies}
                             />
                         ))}
                     </Row>
