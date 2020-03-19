@@ -1,0 +1,34 @@
+.formField {
+    background-color: #242424 !important;
+    border: none !important;
+    color: #FFFFFF !important;
+}
+
+.notMsgBox {
+    height: 50px !important;
+}
+
+.msgSuccess {
+    color: #00FFFF !important;
+    font-size: 1rem !important;
+    margin: 0;
+}
+
+.msgNotSuccess {
+    color: #FF1C6A !important;
+    font-size: 1rem !important;
+    margin: 0;
+}
+
+.formSubmitBtn {
+    float: right;
+    background-color: #000000 !important;
+    border-color: #00FFFF !important;
+    color: #00FFFF !important;
+    margin: 0 0 10% 0;
+}
+
+.formSubmitBtn:hover {
+    background-color: #00FFFF !important;
+    color: #000000 !important;
+}

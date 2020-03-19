@@ -9,6 +9,7 @@
     "animate.css": "^3.7.2",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^4.4.1",
+    "emailjs-com": "^2.4.1",
     "react": "^16.13.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-burger-menu": "^2.6.13",
