@@ -18,17 +18,17 @@ class CollabSection extends Component {
     render() {
         return (
             <Container fluid={true} id="collabSection">
+                <Row>
+                    <Col sm={"12"} style={{ padding: 0 }} >
+                        <h1 id="collabHeader">Collab</h1>
+                        <div className="sectionsSeparator"></div>
+                    </Col>
+                </Row>
                 <ScrollAnimation
-                    animateIn="fadeInUp"
+                    animateIn="fadeInRight"
                     animateOnce={true}
                 >
-                    <Row>
-                        <Col sm={"12"} style={{ padding: 0 }} >
-                            <h1 id="collabHeader">Collab</h1>
-                            <div className="sectionsSeparator"></div>
-                        </Col>
-                    </Row>
-                    <Row>
+                    <Row id="collabCardRow">
                         {this.state.cardCollab.map((collabCard, i) => (
                             <CollabCard
                                 key={i}

@@ -18,20 +18,21 @@ class PortfolioSection extends Component {
     render() {
         return (
             <Container fluid={true} id="portFolioSection">
+                <Row>
+                    <Col sm={"12"} style={{ padding: 0 }} >
+                        <h1 id="portFolioHeader">Portfolio</h1>
+                        <div className="sectionsSeparator"></div>
+                    </Col>
+                </Row>
                 <ScrollAnimation
-                    animateIn="fadeInUp"
+                    animateIn="fadeInLeft"
                     animateOnce={true}
                 >
-                    <Row>
-                        <Col sm={"12"} style={{ padding: 0 }} >
-                            <h1 id="portFolioHeader">Portfolio</h1>
-                            <div className="sectionsSeparator"></div>
-                        </Col>
-                    </Row>
-                    <Row>
+                    <Row id="portCardRow">
                         {this.state.CardData.map((card, i) => (
                             <PortfolioCard
                                 key={i}
+                                delayTime={Number(i + "00")}
                                 projectId={card.id}
                                 projectTitle={card.title}
                                 projectGithub={card.github}

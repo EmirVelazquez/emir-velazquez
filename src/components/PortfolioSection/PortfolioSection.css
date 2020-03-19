@@ -1,7 +1,6 @@
 #portFolioSection {
     width: 100%;
     height: 100%;
-    padding: 0 8% 4% 8%;
     background-color: #000000;
 }
 
@@ -12,4 +11,8 @@
     font-size: 50px;
     font-weight: 500;
     text-align: center;
+}
+
+#portCardRow {
+    padding: 0 7.5% 0 7.5%;
 }

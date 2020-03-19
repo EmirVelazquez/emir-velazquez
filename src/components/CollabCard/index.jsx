@@ -9,23 +9,23 @@ class CollabCard extends Component {
         if (this.props.collabLink === "") {
             return (
                 <div style={{ position: "absolute", bottom: -35, right: "2.5%" }}>
-                    <a href={this.props.collabGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId + "key"}><img src={GitHubBlack} alt="GitHub Logo" className="gitHubRepo" /></a>
+                    <a href={this.props.collabGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId + "key"}><img src={GitHubBlack} alt="GitHub Logo" className="buttonPngs" /></a>
                     <UncontrolledTooltip target={this.props.collabId + "key"} placement="left">GitHub Repo</UncontrolledTooltip>
                 </div>
             )
         } else if (this.props.collabGithub === "") {
             return (
                 <div style={{ position: "absolute", bottom: -35, right: "2.5%" }}>
-                    <a href={this.props.collabLink} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId}><img src={NewTab} alt="Open in New Tab Logo" className="gitHubRepo" /></a>
+                    <a href={this.props.collabLink} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId}><img src={NewTab} alt="Open in New Tab Logo" className="buttonPngs" /></a>
                     <UncontrolledTooltip target={this.props.collabId} placement="left">Read Article</UncontrolledTooltip>
                 </div>
             )
         } else {
             return (
                 <div style={{ position: "absolute", bottom: -35, right: "2.5%" }}>
-                    <a href={this.props.collabLink} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId}><img src={NewTab} alt="Open in New Tab Logo" className="gitHubRepo" /></a>
+                    <a href={this.props.collabLink} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId}><img src={NewTab} alt="Open in New Tab Logo" className="buttonPngs" /></a>
                     <UncontrolledTooltip target={this.props.collabId} placement="left">Demo {this.props.collabTitle}</UncontrolledTooltip>
-                    <a href={this.props.collabGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId + "key"}><img src={GitHubBlack} alt="GitHub Logo" className="gitHubRepo" /></a>
+                    <a href={this.props.collabGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId + "key"}><img src={GitHubBlack} alt="GitHub Logo" className="buttonPngs" /></a>
                     <UncontrolledTooltip target={this.props.collabId + "key"} placement="left">GitHub Repo</UncontrolledTooltip>
                 </div>
             )
