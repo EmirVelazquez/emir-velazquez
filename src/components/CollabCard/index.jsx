@@ -8,21 +8,21 @@ class CollabCard extends Component {
     whichButtonsToMount = () => {
         if (this.props.collabLink === "") {
             return (
-                <div style={{ position: "absolute", bottom: "-5%", right: -10, whiteSpace: "nowrap" }}>
+                <div style={{ position: "absolute", bottom: "-5%", right: 0, whiteSpace: "nowrap" }}>
                     <a href={this.props.collabGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" className="appBtns" id={this.props.collabId + "key"}><img src={GitHubBlack} alt="GitHub Logo" className="buttonPngs" /></Button></a>
                     <UncontrolledTooltip target={this.props.collabId + "key"} placement="bottom">GitHub Repo</UncontrolledTooltip>
                 </div>
             )
         } else if (this.props.collabGithub === "") {
             return (
-                <div style={{ position: "absolute", bottom: "-5%", right: -10, whiteSpace: "nowrap" }}>
+                <div style={{ position: "absolute", bottom: "-5%", right: 0, whiteSpace: "nowrap" }}>
                     <a href={this.props.collabLink} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" id={this.props.collabId} className="appBtns"><img src={NewTab} alt="Open in New Tab Logo" className="buttonPngs" /></Button></a>
                     <UncontrolledTooltip target={this.props.collabId} placement="bottom">Read Article</UncontrolledTooltip>
                 </div>
             )
         } else {
             return (
-                <div style={{ position: "absolute", bottom: "-5%", right: -10, whiteSpace: "nowrap" }}>
+                <div style={{ position: "absolute", bottom: "-5%", right: 0, whiteSpace: "nowrap" }}>
                     <a href={this.props.collabLink} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" id={this.props.collabId} className="appBtns"><img src={NewTab} alt="Open in New Tab Logo" className="buttonPngs" /></Button></a>
                     <UncontrolledTooltip target={this.props.collabId} placement="bottom">Demo {this.props.collabTitle}</UncontrolledTooltip>
                     <a href={this.props.collabGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" className="appBtns" id={this.props.collabId + "key"}><img src={GitHubBlack} alt="GitHub Logo" className="buttonPngs" /></Button></a>

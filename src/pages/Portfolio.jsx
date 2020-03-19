@@ -9,6 +9,7 @@ import Grid from "../components/Grid";
 import AboutMe from "../components/AboutMe";
 import PorfolioSection from "../components/PortfolioSection";
 import CollabSection from "../components/CollabSection";
+import ContactSection from "../components/ContactSection";
 
 class Portfolio extends Component {
 
@@ -46,9 +47,7 @@ class Portfolio extends Component {
                 <AboutMe questionUser={this.props.userFirstName} />
                 <PorfolioSection />
                 <CollabSection />
-                <Container id="portFolioContainer" fluid={true}>
-                    <div>Contact</div>
-                </Container>"
+                <ContactSection userContact={this.props.userFirstName} />
                 <Container id="footerContainer" fluid={true}>
                     <footer >Footer</footer>
                 </Container>

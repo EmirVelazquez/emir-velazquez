@@ -12,7 +12,7 @@ const AboutMe = props => {
                     <div className="sectionsSeparator"></div>
                 </Col>
             </Row>
-            <Row style={{ padding: 0, backgroundColor: "#121212", paddingLeft: "8%", paddingRight: "8%" }}>
+            <Row style={{ padding: 0, paddingLeft: "8%", paddingRight: "8%", marginTop: "1%" }}>
                 <Col sm={"9"} style={{ padding: 0 }}>
                     <div id="aboutMeTextContainer">
                         <p className="aboutMeText">I am a <span className="emphasisText">Full Stack Web Developer</span> that strives to always build using <span className="emphasisText">Design Thinking.</span> I also have a personal belief that there is always something useful to learn from anyone. Most of my time is spent either working on a new project or learning a new technology to further my skills. You will also find me spending time with my spouse and dogs, reading a good book, or traveling around the world.

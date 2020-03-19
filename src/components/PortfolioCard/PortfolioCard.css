@@ -1,13 +1,11 @@
 .cardColumn {
-    padding: 0.8% !important;
+    margin-top: 2%;
 }
 
 .portfolioCardMain {
     height: 100%;
     background-color: #242424 !important;
     color: #FFFFFF;
-    border: solid 10px #242424 !important;
-    border-radius: 5%;
 }
 
 .projectImageWrapper {
@@ -28,7 +26,7 @@
 }
 
 .projectDescription {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .appAnchors {

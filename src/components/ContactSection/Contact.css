@@ -1,25 +1,21 @@
-#aboutMeSection {
+#contactSection {
     width: 100%;
     height: 100%;
     background-color: #000000;
 }
 
-#aboutMeHeader{
-    margin: 1% 8% 0 0;
+#contactHeader {
+    margin: 1% 0 0 0;
     font-weight: 600;
     color: #00ffff;
     font-size: 50px;
     font-weight: 500;
-    text-align: right;
+    text-align: center;
 }
 
-.aboutMeText {
+.contactRow {
+    margin: 1% 0 0 0;
+    padding: 0 8% 0 8%;
     color: #FFFFFF;
     font-size: 40px;
-}
-
-#selfPortrait{
-    padding: 2% 0 5% 8%;
-    width: 100%;
-    height: 100%;
 }
