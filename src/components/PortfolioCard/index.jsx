@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, CardText, CardTitle, CardImg, UncontrolledTooltip } from "reactstrap";
+import { Container, Row, Col, Card, CardText, CardTitle, CardImg, UncontrolledTooltip, Button } from "reactstrap";
 import "./PortfolioCard.css";
 import GitHubBlack from "../../assets/github/githubBlack.png";
 import NewTab from "../..//assets/newTab.png";
@@ -13,10 +13,10 @@ const PortfolioCard = props => {
                     <Row className="projectImageWrapper">
                         <Col sm="12" style={{ padding: 0 }}>
                             <CardImg src={props.projectImage} alt="Image of the Project" className="projectPng" />
-                            <div style={{ position: "absolute", bottom: "-5%", right: "3%", whiteSpace: "nowrap" }}>
-                                <a href={props.projectLink} target="_blank" rel="noopener noreferrer" className="appAnchors" ><button type="button" id={props.projectTitle} className="appBtns"><img src={NewTab} alt="Open in New Tab Logo" className="buttonPngs" /></button></a>
+                            <div style={{ position: "absolute", bottom: "-5%", right: -10, whiteSpace: "nowrap" }}>
+                                <a href={props.projectLink} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" id={props.projectTitle} className="appBtns"><img src={NewTab} alt="Open in New Tab Logo" className="buttonPngs" /></Button></a>
                                 <UncontrolledTooltip target={props.projectTitle} placement="bottom">Demo {props.projectTitle}</UncontrolledTooltip>
-                                <a href={props.projectGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" ><button type="button" className="appBtns" id={props.projectTitle + props.projectKey}><img src={GitHubBlack} alt="GitHub Logo" className="buttonPngs" /></button></a>
+                                <a href={props.projectGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" className="appBtns" id={props.projectTitle + props.projectKey}><img src={GitHubBlack} alt="GitHub Logo" className="buttonPngs" /></Button></a>
                                 <UncontrolledTooltip target={props.projectTitle + props.projectKey} placement="bottom">GitHub Repo</UncontrolledTooltip>
                             </div>
                         </Col>
