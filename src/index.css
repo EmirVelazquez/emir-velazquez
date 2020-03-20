@@ -28,10 +28,10 @@ a:link, a:visited, a:hover,a:focus,a:active{
 }
 
 .sectionsSeparator {
-    background-color: #575757;
-    margin: 0.5% 0 0 0;
-    opacity: 0.5;
-    height: 2px;
+    background-color: #00ffff;
+    margin: 0.5% 8% 0 8%;
+    height: 4px;
+    border-radius: 5px;
 }
 
 input:-webkit-autofill,

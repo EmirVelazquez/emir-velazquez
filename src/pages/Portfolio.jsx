@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import "./Portfolio.css";
-import { Container, Row, Col } from "reactstrap";
+import { Container } from "reactstrap";
 import "react-typist/dist/Typist.css";
 import TopNav from "../components/TopNav";
-import CityJumbotron from "../components/CityLandscape";
+import CityLandscape from "../components/CityLandscape";
 import Sidebar from "../components/Sidebar";
-import Grid from "../components/Grid";
 import AboutMe from "../components/AboutMe";
 import PorfolioSection from "../components/PortfolioSection";
 import CollabSection from "../components/CollabSection";
@@ -34,16 +33,7 @@ class Portfolio extends Component {
             <React.Fragment>
                 <Sidebar sideBarStatus={this.state.navOpen} closeClicked={this.handleCloseMenu}></Sidebar>
                 <TopNav navButtonClicked={this.handleNavButtonClicked}></TopNav>
-                <CityJumbotron whichUser={this.props.userFirstName}></CityJumbotron>
-                <Container id="gridContainer" fluid={true}>
-                    <Grid></Grid>
-                </Container>
-                <Container id="lightCycleContainer" fluid={true}>
-                    <Row>
-                        <Col sm={"12"}>
-                        </Col>
-                    </Row>
-                </Container>
+                <CityLandscape whichUser={this.props.userFirstName}></CityLandscape>
                 <AboutMe questionUser={this.props.userFirstName} />
                 <PorfolioSection />
                 <CollabSection />
