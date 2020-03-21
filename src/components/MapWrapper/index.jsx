@@ -24,8 +24,6 @@ class MapWrapper extends Component {
         this.setState({
             isInfoboxVisible: false
         })
-
-        console.log(mapKey);
     }
 
     render() {
