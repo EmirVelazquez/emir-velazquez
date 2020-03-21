@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "reactstrap";
 import ContactForm from "../ContactForm";
-// import GoogleMap from "../GoogleMap";
+import MapWrapper from "../MapWrapper";
 import "./Contact.css";
 
 class ContactSection extends Component {
     state = {
-
     }
 
     render() {
@@ -24,12 +23,10 @@ class ContactSection extends Component {
                 <Row className="contactRow">
                     <Container fluid={true}>
                         <Row>
-                            <Col sm="4" style={{ padding: 0 }}>
+                            <Col sm="4" id="formColumn">
                                 <ContactForm namePlaceholder={this.props.userContact} />
                             </Col>
-                            <Col sm="8">
-                                {/* <GoogleMap></GoogleMap> */}
-                            </Col>
+                            <MapWrapper />
                         </Row>
                     </Container>
                 </Row>
