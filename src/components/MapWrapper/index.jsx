@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Col } from "reactstrap";
 import GoogleMapWithMarker from "../GoogleMapWithMarker";
+import "./MapWrapper.css";
 const mapKey = process.env.REACT_APP_GOOGLE_MAPS_KEY;
 
 class MapWrapper extends Component {
@@ -28,7 +29,7 @@ class MapWrapper extends Component {
 
     render() {
         return (
-            <Col sm="8" style={{ padding: 0, height: 900, width: "100%" }}>
+            <Col sm="8" id="mapColumn">
                 <GoogleMapWithMarker
                     // googleMapURL={"https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=" + mapKey}
                     googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key="

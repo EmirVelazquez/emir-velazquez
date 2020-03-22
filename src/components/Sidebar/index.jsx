@@ -6,12 +6,13 @@ import CloseMenu from "../../assets/closeMenu.png";
 const Sidebar = props => {
     return (
         <Menu
-            width={200}
+            width={190}
             isOpen={props.sideBarStatus}
             customBurgerIcon={false}
             customCrossIcon={false}
             disableAutoFocus
-            disableOverlayClick>
+            disableOverlayClick
+            disableCloseOnEsc>
             <button id="closeNavBtn" onClick={props.closeClicked}>
                 <img src={CloseMenu} alt="Close Icon" style={{ width: 18, height: 18 }} />
             </button>

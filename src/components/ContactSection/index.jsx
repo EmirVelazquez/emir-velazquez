@@ -12,7 +12,7 @@ class ContactSection extends Component {
         return (
             <Container fluid={true} id="contactSection">
                 <Row>
-                    <Col sm={"12"} style={{ padding: 0 }} >
+                    <Col sm="12" style={{ padding: 0 }} >
                         <h1 id="contactHeader">Contact</h1>
                         <div className="sectionsSeparator"></div>
                     </Col>

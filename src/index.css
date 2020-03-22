@@ -8,10 +8,18 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
+html, body {
+    height: 100%;
+    position: relative;
     background: #000000;
-    height: 100vh;
+}
+
+#pageContainer {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 150px;
 }
 
 a:link, a:visited, a:hover,a:focus,a:active{
@@ -42,5 +50,7 @@ input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0px 1000px #242424 inset;
     -webkit-text-fill-color: #FFFFFF !important;
 }
+
+
 
 
