@@ -29,7 +29,7 @@ class MapWrapper extends Component {
 
     render() {
         return (
-            <Col sm="8" id="mapColumn">
+            <Col sm="7" id="mapColumn">
                 <GoogleMapWithMarker
                     // googleMapURL={"https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=" + mapKey}
                     googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key="

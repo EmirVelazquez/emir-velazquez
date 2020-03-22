@@ -9,6 +9,7 @@ import PorfolioSection from "../components/PortfolioSection";
 import CollabSection from "../components/CollabSection";
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
+import BackToTop from "../components/BackToTop";
 
 class Portfolio extends Component {
 
@@ -40,6 +41,7 @@ class Portfolio extends Component {
                     <CollabSection></CollabSection>
                     <ContactSection userContact={this.props.userFirstName}></ContactSection>
                     <Footer />
+                    <BackToTop numberOfPxToScroll="100" delayInMs="15" />
                 </div>
             </React.Fragment>
         )
