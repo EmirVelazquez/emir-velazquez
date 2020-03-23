@@ -16,19 +16,19 @@ const Sidebar = props => {
             <button id="closeNavBtn" onClick={props.closeClicked}>
                 <img src={CloseMenu} alt="Close Icon" style={{ width: 18, height: 18 }} />
             </button>
-            <button className="sidebarButtons" id="personButton">
+            <button className="sidebarButtons" id="personButton" onClick={props.scrollToAbout}>
                 <div className="iconHolder" id="personHolder"></div>
                 <p className="sidenavText">About</p>
             </button>
-            <button className="sidebarButtons" id="portfolioButton">
+            <button className="sidebarButtons" id="portfolioButton" onClick={props.scrollToPortfolio}>
                 <div className="iconHolder" id="portfolioHolder"></div>
                 <p className="sidenavText">Portfolio</p>
             </button>
-            <button className="sidebarButtons" id="teamButton">
+            <button className="sidebarButtons" id="teamButton" onClick={props.scrollToCollab}>
                 <div className="iconHolder" id="teamHolder"></div>
                 <p className="sidenavText">Collab</p>
             </button>
-            <button className="sidebarButtons" id="contactButton">
+            <button className="sidebarButtons" id="contactButton" onClick={props.scrollToContact}>
                 <div className="iconHolder" id="contactHolder"></div>
                 <p className="sidenavText">Contact</p>
             </button>

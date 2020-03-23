@@ -22,19 +22,9 @@
     white-space: nowrap;
 }
 
-#gitHubFooter {
+.footerAnchorIcons {
     display: inline-block;
     margin: 0 10px 0 0;
-    border-radius: 50%;
-    border: 1px solid #FFFFFF;
-    padding: 5px;
-    text-align: center;
-    width: 40px;
-    height: 40px;
-}
-
-#linkedInFooter {
-    display: inline-block;
     border-radius: 50%;
     border: 1px solid #FFFFFF;
     padding: 5px;

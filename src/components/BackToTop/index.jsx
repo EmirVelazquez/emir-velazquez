@@ -9,7 +9,7 @@ class BackToTop extends Component {
 
     componentDidMount() {
         document.addEventListener("scroll", () => {
-            if (window.scrollY > 100) {
+            if (window.scrollY > 1000) {
                 this.setState({ pagePositionMoved: true })
             } else {
                 this.setState({ pagePositionMoved: false })
