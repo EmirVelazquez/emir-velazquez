@@ -54,9 +54,6 @@ const Sidebar = props => {
                         if (e.key === "Enter") {
                             e.preventDefault();
                             props.enterNewName();
-                            if (props.wasSuccess === "true") {
-                                props.closeClicked();
-                            }
                         }
                     }}>
                         <FormGroup>

@@ -24,13 +24,13 @@ const GoogleMapWithMarker = withScriptjs(withGoogleMap(props => (
         <Marker
             icon={{ url: mapMarker }}
             position={{
-                lat: 32.814000,
-                lng: -96.948900
+                lat: 32.776700,
+                lng: -96.797000
             }}
             onClick={(message, lang, lat) => props.handleMarkerClick(
-                "Currently based out of Irving, Texas",
-                32.814000,
-                -96.948900
+                "Currently based out of Dallas, Texas",
+                32.776700,
+                -96.797000
             )}
         />
         {props.isInfoboxVisible && (

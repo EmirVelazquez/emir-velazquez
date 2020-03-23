@@ -63,20 +63,20 @@ class App extends Component {
     let newNameLower = this.state.newName.trim().toLowerCase();
     if (newNameLower === "") {
       this.setState({ isItinvalid: true })
+      setTimeout(() => this.setState({ isItinvalid: false }), 2000)
     } else {
       let newNameUpper = newNameLower.charAt(0).toUpperCase() + newNameLower.substring(1);
-      console.log("New Name requested is: " + newNameUpper);
       // Save the new user name to local storage
       localStorage.setItem("userName", newNameUpper);
       // Set the new states to display instant change
       this.setState({ userNameIs: newNameUpper, newName: "", isItinvalid: false, nameWasChangedSuccessfully: true })
+      setTimeout(() => this.setState({ nameWasChangedSuccessfully: false }), 2000)
     }
   }
 
   newUserNameBoxChange = event => {
     let { name, value } = event.target;
     this.setState({ [name]: value, isItinvalid: false, nameWasChangedSuccessfully: false })
-    console.log(event.target.value);
   }
 
   render() {
