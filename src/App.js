@@ -6,7 +6,9 @@ import Porfolio from "./pages/Portfolio";
 class App extends Component {
   state = {
     userNameIs: "",
-    currentThemeIs: ""
+    newName: "",
+    isItinvalid: false,
+    nameWasChangedSuccessfully: false
   }
 
   componentDidMount() {
@@ -43,12 +45,38 @@ class App extends Component {
         <Route exact path="/" render={props => (
           <Porfolio
             {...props}
-            userFirstName={this.state.userNameIs}>
+            userFirstName={this.state.userNameIs}
+            handleNewNameSubmit={this.newUserNameSubmitted}
+            newNameRequested={this.state.newName}
+            handleNameChange={this.newUserNameBoxChange}
+            changeNameValid={this.state.isItinvalid}
+            nameSuccessChanged={this.state.nameWasChangedSuccessfully}
+          >
           </Porfolio>
         )}>
         </Route>
       )
     }
+  }
+
+  newUserNameSubmitted = () => {
+    let newNameLower = this.state.newName.trim().toLowerCase();
+    if (newNameLower === "") {
+      this.setState({ isItinvalid: true })
+    } else {
+      let newNameUpper = newNameLower.charAt(0).toUpperCase() + newNameLower.substring(1);
+      console.log("New Name requested is: " + newNameUpper);
+      // Save the new user name to local storage
+      localStorage.setItem("userName", newNameUpper);
+      // Set the new states to display instant change
+      this.setState({ userNameIs: newNameUpper, newName: "", isItinvalid: false, nameWasChangedSuccessfully: true })
+    }
+  }
+
+  newUserNameBoxChange = event => {
+    let { name, value } = event.target;
+    this.setState({ [name]: value, isItinvalid: false, nameWasChangedSuccessfully: false })
+    console.log(event.target.value);
   }
 
   render() {

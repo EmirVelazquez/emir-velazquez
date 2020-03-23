@@ -6,10 +6,10 @@
 /* General sidebar styles */
 .bm-menu {
   background: #121212;
-  padding: 2.5em 1.5em 0;
+  padding: 2.5em 1.5em;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  height: 350px !important;
+  height: 470px !important;
 }
 
 #closeNavBtn {
@@ -180,7 +180,7 @@
 }
 
 .navSeparator{
-    background-color: #575757;
+    background-color: #00FFFF;
     margin: 0 0 10% 0;
     opacity: 0.5;
     height: 2px;
@@ -201,4 +201,25 @@
 
 .socialLink:hover {
     color: #FF6725;
+}
+
+#changeNameBtn{
+    background-color: #000000 !important;
+    border-color: #00FFFF !important;
+    color: #00FFFF !important;
+    margin: 0 0 0 5px;
+}  
+
+#changeNameBtn:hover {
+    background-color: #00FFFF !important;
+    color: #000000 !important;
+}
+#changeNameWrapper {
+    background-color: transparent;
+}
+
+#changeNameField {
+    background-color: #242424 !important;
+    border: none !important;
+    color: #FFFFFF !important;
 }

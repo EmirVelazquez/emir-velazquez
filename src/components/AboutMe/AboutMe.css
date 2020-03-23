@@ -14,7 +14,29 @@
 
 .aboutMeText {
     color: #FFFFFF;
+    font-size: 30px;
+}
+
+#skillsHeader{
+    color: #00FFFF;
     font-size: 40px;
+}
+
+#skillListContainer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.paraGraphAnchor {
+    color: #00FFFF !important;
+    text-decoration: underline !important;
+}
+
+.skillList {
+    float: left;
+    padding: 0 15px 0 0;
 }
 
 #selfPortrait{

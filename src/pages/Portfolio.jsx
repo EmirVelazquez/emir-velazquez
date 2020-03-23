@@ -63,6 +63,11 @@ class Portfolio extends Component {
                     scrollToPortfolio={this.handleScrollToPort}
                     scrollToCollab={this.handleScrollToCollab}
                     scrollToContact={this.handleScrollToContact}
+                    newNameValue={this.props.newNameRequested}
+                    changeNameBoxChange={this.props.handleNameChange}
+                    enterNewName={this.props.handleNewNameSubmit}
+                    notEmpty={this.props.changeNameValid}
+                    wasSuccess={this.props.nameSuccessChanged}
                 >
                 </Sidebar>
                 <TopNav navButtonClicked={this.handleNavButtonClicked}></TopNav>

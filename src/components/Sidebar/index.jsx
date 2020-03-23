@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { fallDown as Menu } from "react-burger-menu";
+import { Dropdown, DropdownToggle, DropdownMenu, Form, FormGroup, Input, FormFeedback } from "reactstrap";
 import "./Sidebar.css";
 import CloseMenu from "../../assets/closeMenu.png";
 
 const Sidebar = props => {
+    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const toggle = () => setDropdownOpen(prevState => !prevState);
+
     return (
         <Menu
-            width={190}
+            width={200}
             isOpen={props.sideBarStatus}
             customBurgerIcon={false}
             customCrossIcon={false}
@@ -41,6 +45,37 @@ const Sidebar = props => {
                 <div className="iconHolder" id="linkedInHolder"></div>
                 <p className="socialText">LinkedIn</p>
             </a>
+            <Dropdown className="sidebarButtons" id="contactButton" isOpen={dropdownOpen} toggle={toggle} direction="down">
+                <DropdownToggle caret id="changeNameBtn">
+                    Change Name
+                </DropdownToggle>
+                <DropdownMenu id="changeNameWrapper">
+                    <Form onKeyPress={e => {
+                        if (e.key === "Enter") {
+                            e.preventDefault();
+                            props.enterNewName();
+                            if (props.wasSuccess === "true") {
+                                props.closeClicked();
+                            }
+                        }
+                    }}>
+                        <FormGroup>
+                            <Input
+                                type="text"
+                                name="newName"
+                                value={props.newNameVal}
+                                onChange={props.changeNameBoxChange}
+                                placeholder="New Name"
+                                id="changeNameField"
+                                invalid={props.notEmpty}
+                                valid={props.wasSuccess}
+                            />
+                            <FormFeedback>Can't Be Empty</FormFeedback>
+                            <FormFeedback valid>Success!</FormFeedback>
+                        </FormGroup>
+                    </Form>
+                </DropdownMenu>
+            </Dropdown>
         </Menu>
     )
 }

@@ -27,7 +27,7 @@ const Footer = () => {
                             <div style={{ display: "inline-block", float: "right", color: "#FFFFFF", whiteSpace: "nowrap" }}>
                                 <p style={{ display: "inline-block" }}>Built With React</p>
                                 <div id="reactFooter">
-                                    <img src={ReactLogo} alt="React Logo" style={{ width: "100%", height: "100%" }} />
+                                    <img src={ReactLogo} alt="React Logo" id="reactLogoRotate" />
                                 </div>
                             </div>
                         </div>
