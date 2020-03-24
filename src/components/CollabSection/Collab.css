@@ -15,3 +15,74 @@
 #collabCardRow {
     padding: 0 7.5% 0 7.5%;
 }
+
+/* Media Queries Section */
+@media screen and (max-width: 1800px) {
+    #collabSection {
+        margin-top: 30px;
+    }
+    
+    #collabHeader {
+        font-size: 35px;
+    }
+
+    #collabCardRow {
+        padding: 0 7% 0 7%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #collabSection {
+        margin-top: 20px;
+    }
+
+    #collabHeader {
+        font-size: 30px;
+    }
+
+    #collabCardRow {
+        padding: 0 6.8% 0 6.8%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #collabSection {
+        margin-top: 10px;
+    }
+
+    #collabHeader {
+        font-size: 25px;
+    }
+
+    #collabCardRow {
+        padding: 0 6.5% 0 6.5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #collabSection {
+        margin-top: 5px;
+    }
+
+    #collabHeader {
+        font-size: 20px;
+    }
+
+    #collabCardRow {
+        padding: 0 5.5% 0 5.5%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #collabSection {
+        margin-top: 1px;
+    }
+
+    #collabHeader {
+        font-size: 16px;
+    }
+
+    #collabCardRow {
+        padding: 0 5% 0 5%;
+    }
+}

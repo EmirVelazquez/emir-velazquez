@@ -29,37 +29,48 @@
     font-size: 20px;
 }
 
-.appAnchors {
-    width: 50px;
-    height: 50px;
+.linksMainContainer {
+    position: absolute;
+    bottom: -5.5%;
+    right: 0;
+    white-space: nowrap;
+}
+
+.anchorWrapper {
+    border-radius: 50%;
+    background-color: #000000;
+    border: 2px solid #00FFFF;
     margin: 0 10px 0 0;
-    border-radius: 50% !important;
-    background-color: transparent;
     display: inline-block;
-    box-shadow: 0px 0px 20px rgba(18, 18, 18, 0.692) !important;
-    padding: 0 !important;
-}
-
-.appBtns {
-    background-color: #000000 !important;
-    height: 50px;
     width: 50px;
-    border-radius: 50% !important;
-    border: 2px solid #00FFFF !important;
-    padding: 8px !important;
+    height: 50px;
+    position: relative;
 }
 
-.appBtns:hover, .appAnchors:hover {
+.appAnchors {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 8px;
+}
+
+.anchorWrapper:hover {
     cursor: pointer;
     background-color: #00ffff !important;
+    box-shadow: 0px 0px 10px rgba(18, 18, 18, 0.692) !important;
 }
 
 .buttonPngs {
     fill: #00ffff !important;
-    border-radius: 50% !important;
 }
 
-.appBtns:hover .buttonPngs, .appBtns:hover .buttonPngs {
+.anchorWrapper:hover .buttonPngs {
     fill: #000000 !important;
 }
 
@@ -73,15 +84,13 @@
         font-size: 18px;
     }
 
-    .appAnchors {
-        width: 40px;
-        height: 40px;
+    .linksMainContainer {
+        bottom: -7%;
     }
 
-    .appBtns {
+    .anchorWrapper {
         width: 40px;
         height: 40px;
-        padding: 3px !important;
     }
 }
 
@@ -94,15 +103,17 @@
         font-size: 16px;
     }
 
-     .appAnchors {
+    .linksMainContainer {
+        bottom: -10%;
+    }
+
+    .anchorWrapper {
         width: 30px;
         height: 30px;
     }
 
-    .appBtns {
-        width: 30px;
-        height: 30px;
-        padding: 0 !important;
+    .appAnchors {
+        padding: 5px;
     }
 }
 
@@ -114,6 +125,10 @@
     .projectDescription {
         font-size: 14px;
     }
+
+    .linksMainContainer {
+        bottom: -12%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -124,6 +139,13 @@
     .projectDescription {
         font-size: 12px;
     }
+
+    .anchorWrapper {
+        margin: 0 5px 0 0;
+        width: 20px;
+        height: 20px;
+    }
+
 }
 
 @media screen and (max-width: 599px) {
@@ -133,5 +155,15 @@
 
     .projectDescription {
         font-size: 12px;
+    }
+
+    .linksMainContainer {
+        bottom: -6%;
+    }
+
+    .anchorWrapper {
+        margin: 0 10px 0 0;
+        width: 30px;
+        height: 30px;
     }
 }

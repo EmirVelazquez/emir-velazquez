@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Col, Card, CardText, CardTitle, CardImg, UncontrolledTooltip, Button } from "reactstrap";
+import { Container, Row, Col, Card, CardText, CardTitle, CardImg, UncontrolledTooltip } from "reactstrap";
 import GitHubLogo from "../GitHubLogo";
 import NewTabLogo from "../NewTabLogo";
 
@@ -8,24 +8,24 @@ class CollabCard extends Component {
     whichButtonsToMount = () => {
         if (this.props.collabLink === "") {
             return (
-                <div style={{ position: "absolute", bottom: "-5%", right: 0, whiteSpace: "nowrap" }}>
-                    <a href={this.props.collabGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" className="appBtns" id={this.props.collabId + "key"}><GitHubLogo /></Button></a>
+                <div className="linksMainContainer">
+                    <div className="anchorWrapper"><a href={this.props.collabGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId + "key"}><GitHubLogo /></a></div>
                     <UncontrolledTooltip target={this.props.collabId + "key"} placement="bottom">GitHub Repo</UncontrolledTooltip>
                 </div>
             )
         } else if (this.props.collabGithub === "") {
             return (
-                <div style={{ position: "absolute", bottom: "-5%", right: 0, whiteSpace: "nowrap" }}>
-                    <a href={this.props.collabLink} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" id={this.props.collabId} className="appBtns"><NewTabLogo /></Button></a>
+                <div className="linksMainContainer">
+                    <div className="anchorWrapper"><a href={this.props.collabLink} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId}><NewTabLogo /></a></div>
                     <UncontrolledTooltip target={this.props.collabId} placement="bottom">Read Article</UncontrolledTooltip>
                 </div>
             )
         } else {
             return (
-                <div style={{ position: "absolute", bottom: "-5%", right: 0, whiteSpace: "nowrap" }}>
-                    <a href={this.props.collabLink} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" id={this.props.collabId} className="appBtns"><NewTabLogo /></Button></a>
+                <div className="linksMainContainer">
+                    <div className="anchorWrapper"><a href={this.props.collabLink} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId}><NewTabLogo /></a></div>
                     <UncontrolledTooltip target={this.props.collabId} placement="bottom">Demo {this.props.collabTitle}</UncontrolledTooltip>
-                    <a href={this.props.collabGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" className="appBtns" id={this.props.collabId + "key"}><GitHubLogo /></Button></a>
+                    <div className="anchorWrapper"><a href={this.props.collabGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" id={this.props.collabId + "key"}><GitHubLogo /></a></div>
                     <UncontrolledTooltip target={this.props.collabId + "key"} placement="bottom">GitHub Repo</UncontrolledTooltip>
                 </div>
             )

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, CardText, CardTitle, CardImg, UncontrolledTooltip, Button } from "reactstrap";
+import { Container, Row, Col, Card, CardText, CardTitle, CardImg, UncontrolledTooltip } from "reactstrap";
 import "./PortfolioCard.css";
 import GitHubLogo from "../GitHubLogo";
 import NewTabLogo from "../NewTabLogo";
@@ -12,10 +12,10 @@ const PortfolioCard = props => {
                     <Row className="projectImageWrapper">
                         <Col sm="12" style={{ padding: 0 }}>
                             <CardImg src={props.projectImage} alt="Image of the Project" className="projectPng" />
-                            <div style={{ position: "absolute", bottom: "-5%", right: 0, whiteSpace: "nowrap" }}>
-                                <a href={props.projectLink} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" id={props.projectTitle} className="appBtns"><NewTabLogo /></Button></a>
+                            <div className="linksMainContainer">
+                                <div className="anchorWrapper"><a href={props.projectLink} target="_blank" rel="noopener noreferrer" className="appAnchors" id={props.projectTitle}><NewTabLogo /></a></div>
                                 <UncontrolledTooltip target={props.projectTitle} placement="bottom">Demo {props.projectTitle}</UncontrolledTooltip>
-                                <a href={props.projectGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" ><Button type="button" className="appBtns" id={props.projectTitle + props.projectKey}><GitHubLogo /></Button></a>
+                                <div className="anchorWrapper"><a href={props.projectGithub} target="_blank" rel="noopener noreferrer" className="appAnchors" id={props.projectTitle + props.projectKey}><GitHubLogo /></a></div>
                                 <UncontrolledTooltip target={props.projectTitle + props.projectKey} placement="bottom">GitHub Repo</UncontrolledTooltip>
                             </div>
                         </Col>
