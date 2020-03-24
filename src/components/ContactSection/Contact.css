@@ -1,7 +1,7 @@
 #contactSection {
+    margin: 40px 0 50px 0;
     width: 100%;
     background-color: #000000;
-    margin: 40px 0 50px 0;
 }
 
 #contactHeader {
@@ -13,9 +13,9 @@
     text-align: center;
 }
 
-.contactRow {
+#contactRow {
     margin: 1% 0 0 0;
-    padding: 0 8% 0 8%;
+    padding: 0 7.5% 0 7.5%;
     color: #FFFFFF;
     font-size: 40px;
 }
@@ -23,4 +23,102 @@
 #formColumn {
     padding: 0 20px 0 0;
     font-size: 30px;
+}
+
+/* Media Queries Section */
+@media screen and (max-width: 1800px) {
+    #contactSection {
+        margin: 30px 0 40px 0;
+    }
+    
+    #contactHeader {
+        font-size: 35px;
+    }
+
+    #contactRow{
+        padding: 0 7% 0 7%;
+    }
+
+    .contactText, #formColumn {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #contactSection {
+        margin: 20px 0 30px 0;
+    }
+
+    #contactHeader {
+        font-size: 30px;
+    }
+
+    #contactRow {
+        padding: 0 6.8% 0 6.8%;
+    }
+
+    .contactText, #formColumn {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #contactSection {
+        margin: 10px 0 20px 0;
+    }
+
+    #contactHeader {
+        font-size: 25px;
+    }
+
+    #contactRow {
+        padding: 0 6.5% 0 6.5%;
+    }
+
+    .contactText, #formColumn {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contactSection {
+        margin: 5px 0 10px 0;
+    }
+
+    #contactHeader {
+        font-size: 20px;
+    }
+
+    #contactRow {
+        padding: 0 5.5% 0 5.5%;
+    }
+
+    .contactText, #formColumn {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #contactSection {
+        margin-top: 1px;
+        margin: 1px 0 5px 0;
+    }
+
+    #contactHeader {
+        font-size: 16px;
+    }
+
+    #contactRow {
+        padding: 0 5% 0 5%;
+    }
+
+    .contactText, #formColumn {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #formColumn {
+        padding: 0;
+    }
 }

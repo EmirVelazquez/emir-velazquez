@@ -41,7 +41,7 @@ const GoogleMapWithMarker = withScriptjs(withGoogleMap(props => (
                 onCloseClick={() => props.handleInfoboxClick()}
             >
                 <div>
-                    <h6 style={{ color: "black" }}>{props.infoboxMessage}</h6>
+                    <h6 id="markerText">{props.infoboxMessage}</h6>
                 </div>
             </InfoWindow>
         )}

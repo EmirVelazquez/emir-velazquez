@@ -113,11 +113,11 @@ class ContactForm extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col sm={6}>
+                    <Col sm={6} id="validationContainer">
                         <FormFeedback className="msgSuccess" style={{ display: `${this.state.messageSent}` }}>Message Sent!</FormFeedback>
                         <FormFeedback className="msgNotSuccess" style={{ display: `${this.state.inCompleteBoxes}` }}>Please ensure all boxes are complete.</FormFeedback>
                     </Col>
-                    <Col sm={6}>
+                    <Col sm={6} id="submitButtonContainer">
                         <Button type="submit" className="formSubmitBtn">Send</Button>
                     </Col>
                 </Row>

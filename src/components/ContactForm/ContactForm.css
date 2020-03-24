@@ -32,3 +32,53 @@
     background-color: #00FFFF !important;
     color: #000000 !important;
 }
+
+/* Media Queries Section */
+@media screen and (max-width: 1800px) {
+    .msgSuccess, .msgNotSuccess, .formSubmitBtn, .formField {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+     .msgSuccess, .msgNotSuccess, .formSubmitBtn, .formField {
+        font-size: 18px !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+     .msgSuccess, .msgNotSuccess, .formSubmitBtn, .formField {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+     .msgSuccess, .msgNotSuccess, .formSubmitBtn, .formField {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 599px) {
+     .msgSuccess, .msgNotSuccess, .formSubmitBtn, .formField {
+        font-size: 12px !important;
+    }
+
+    .notMsgBox {
+        height: 35px !important;
+    }
+
+    #validationContainer {
+        text-align: center;
+        height: 25px;
+    }
+
+    #submitButtonContainer {
+        text-align: center;
+    }
+
+    .formSubmitBtn {
+        border-radius: 20px !important;
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+}
