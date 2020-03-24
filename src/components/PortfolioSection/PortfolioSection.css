@@ -1,4 +1,5 @@
 #portFolioSection {
+    margin-top: 40px;
     width: 100%;
     background-color: #000000;
 }
@@ -15,3 +16,75 @@
 #portCardRow {
     padding: 0 7.5% 0 7.5%;
 }
+
+/* Media Queries Section */
+@media screen and (max-width: 1800px) {
+    #portFolioSection {
+        margin-top: 30px;
+    }
+    
+    #portFolioHeader {
+        font-size: 35px;
+    }
+
+    #portCardRow {
+        padding: 0 7% 0 7%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #portFolioSection {
+        margin-top: 20px;
+    }
+
+    #portFolioHeader {
+        font-size: 30px;
+    }
+
+    #portCardRow {
+        padding: 0 6.8% 0 6.8%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #portFolioSection {
+        margin-top: 10px;
+    }
+
+    #portFolioHeader {
+        font-size: 25px;
+    }
+
+    #portCardRow {
+        padding: 0 6.5% 0 6.5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #portFolioSection {
+        margin-top: 5px;
+    }
+
+    #portFolioHeader {
+        font-size: 20px;
+    }
+
+    #portCardRow {
+        padding: 0 5.5% 0 5.5%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #portFolioSection {
+        margin-top: 1px;
+    }
+
+    #portFolioHeader {
+        font-size: 16px;
+    }
+
+    #portCardRow {
+        padding: 0 5% 0 5%;
+    }
+}
+

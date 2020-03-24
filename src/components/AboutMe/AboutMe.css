@@ -1,4 +1,5 @@
 #aboutMeSection {
+    margin-top: 40px;
     width: 100%;
     background-color: #000000;
 }
@@ -24,7 +25,7 @@
 
 #skillListContainer {
     list-style-type: none;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
     overflow: hidden;
 }
@@ -49,4 +50,104 @@
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
+}
+
+/* Media Queries Section */
+@media screen and (max-width: 1800px) {
+    #aboutMeSection {
+        margin-top: 30px;
+    }
+
+    #aboutMeHeader {
+        font-size: 35px;
+    }
+
+    #skillsHeader {
+        font-size: 25px;
+    }
+
+    .aboutMeText{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #aboutMeSection {
+        margin-top: 20px;
+    }
+
+    #aboutMeHeader {
+        font-size: 30px;
+    }
+
+    #skillsHeader {
+        font-size: 20px;
+    }
+
+    .aboutMeText{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #aboutMeSection {
+        margin-top: 10px;
+    }
+
+    #aboutMeHeader {
+        font-size: 25px;
+    }
+
+    #skillsHeader {
+        font-size: 18px;
+    }
+
+    .aboutMeText{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #aboutMeSection {
+        margin-top: 5px;
+    }
+
+    #aboutMeHeader {
+        font-size: 20px;
+    }
+    #skillsHeader {
+        font-size: 16px;
+    }
+
+    .aboutMeText{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    #aboutMeSection {
+        margin-top: 1px;
+    }
+
+    #aboutMeHeader {
+        font-size: 16px;
+    }
+
+    #skillsHeader {
+        font-size: 14px;
+    }
+
+    .aboutMeText{
+        font-size: 12px;
+    }
+
+    #portraitContainer {
+        text-align: center;
+    }
+
+    #selfPortrait{
+        max-width: 60%;
+        max-height: 60%;
+        margin-bottom: 10px;
+    }
 }

@@ -8,11 +8,43 @@
     color: #FFFFFF;
     font-size: 50px;
     font-weight: 500;
+    margin: 0;
 }
 
 #typistGreetingContainer {
     position: absolute;
-    top: 48%;
+    top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* Media Queries Section */
+@media screen and (max-width: 1800px) {
+    .userGrettingHeader {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .userGrettingHeader {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .userGrettingHeader {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .userGrettingHeader {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .userGrettingHeader {
+        font-size: 16px;
+    }
 }
