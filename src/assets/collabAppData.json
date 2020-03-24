@@ -6,7 +6,7 @@
         "appLink": "",
         "appImage": "/sentinelLogo.png",
         "backgroundColor": "#EFEFEF",
-        "description": "Sentinel is a React Native mobile app built by a team of 5, including myself, that allows a user to keep track of people in his/her group. I designed the app by incorporating Design Thinking. Mainly worked on building the front end from top to bottom by learning React Native in about a week. I also assisted my teammate with geolocation and Google Maps API for the map service."
+        "description": "Sentinel is a React Native mobile app built by a team of 5, including myself, that allows the user to keep track of people in his/her group. Designed the app by incorporating Design Thinking. Mainly worked on building the front end from top to bottom by learning React Native in about a week. Also assisted my teammate with geolocation and Google Maps API for the map service."
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@
         "appLink": "https://visualstorageintelligence.com/ai-hackathon-finals/",
         "appImage": "/alfredLogo.png",
         "backgroundColor": "#EFEFEF",
-        "description": "1st place win in Visual Storage Intelligence's first annual Ai Hackathon. Our Team !False, had 7 days to present a solution for automating a time consuming manual report that goes out weekly to the company's clients. I personally handled the design of the front end and built it using jQuery, Bootstrap, HTML, & CSS. Additionally I designed, built the email template, and used Nodemailer to handle the automation of emails."
+        "description": "1st place win in Visual Storage Intelligence's first annual Ai Hackathon. Our Team !False, had 7 days to present a solution for automating a time consuming manual report that goes out weekly to the company's clients. Handled the design of the front end and built it using jQuery, Bootstrap, HTML, & CSS. Additionally designed, built the email template, and used Nodemailer.s to handle the automation of emails."
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@
         "appLink": "https://ancient-beach-76628.herokuapp.com/",
         "appImage": "/shelveitLogo.png",
         "backgroundColor": "#EFEFEF",
-        "description": "Full stack application that allows amateur authors to write and publish their work for other users to read them. My completed duties consisted of building the backend with MySQL, Node, and Express. I also wrote the C.R.U.D operations and utilized Quill.js for the editor page that I designed and built."
+        "description": "Full stack web app that allows amateur authors to write and publish their work for other users to read them. Assigned duties consisted of building the backend with MySQL, Node, and Express. Also wrote the C.R.U.D operations and utilized Quill.js for the editor page that I designed and built."
     },
     {
         "id": 4,
@@ -33,6 +33,6 @@
         "appLink": "https://graysonm23.github.io/Taste-Buds/",
         "appImage": "/tastebudsLogo.png",
         "backgroundColor": "#EFEFEF",
-        "description": "Application for users who love food that enables them to get recipes, how-to videos, and restaurant locations for a searched dish name. My assigned part involved getting the how-to cook videos done which I completed using Google's Youtube API. I successfully fetched the data necessary and implemented the logic to have the Youtube player in our app."
+        "description": "Web app for users who love food that enables them to get recipes, how-to videos, and restaurant locations for a searched dish name. Assigned part involved getting the how-to cook videos done which I completed using Google's Youtube API. Successfully fetched the data necessary and implemented the logic to have the Youtube player in our app."
     }
 ]

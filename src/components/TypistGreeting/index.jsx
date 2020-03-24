@@ -16,7 +16,7 @@ const TypistGreeting = props => {
                     <Typist cursor={{ show: false }} startDelay={2500}>
                         <h2 className="userGrettingHeader">I love to <span className="emphasisText">develop</span> and <span className="emphasisText">collaborate.</span></h2>
                         <Typist.Backspace count={34} delay={1000} />
-                        <h2 className="userGrettingHeader"><span className="emphasisText">Let's get it done.</span></h2>
+                        <h2 className="userGrettingHeader">Let's<span className="emphasisText"> get it done.</span></h2>
                     </Typist>
                 </div>
             </div>

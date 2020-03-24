@@ -31,7 +31,7 @@ const AboutMe = props => {
                             <li className="skillList aboutMeText">MongoDB</li>
                         </ul>
                         <p className="aboutMeText">Just to name a few, due to my constant pursuit of learning new technologies. Visit my <a href="https://www.linkedin.com/in/emir-velazquez-35560b196/" target="_blank" rel="noopener noreferrer" className="paraGraphAnchor">LinkedIn</a>, <a href={ResumeDL} download className="paraGraphAnchor">download</a> my resume, or simply get in touch with me for more details. Do you have any new ideas or projects you want help with, <span className="usersNameText">{props.questionUser}?</span></p>
-                        <p className="aboutMeText">Contact me and <span className="emphasisText">let's get it done.</span></p>
+                        <p className="aboutMeText">Contact me and let's<span className="emphasisText"> get it done.</span></p>
                     </div>
                 </Col>
                 <Col sm={"3"} style={{ padding: 0, height: "60%" }}>
