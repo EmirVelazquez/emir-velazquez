@@ -18,7 +18,7 @@ class Portfolio extends Component {
     }
 
     componentDidMount = () => {
-        console.log("Portfolio Page Mounted");
+        console.log("Thanks for visiting my portfolio page.");
     }
 
     handleNavButtonClicked = () => {

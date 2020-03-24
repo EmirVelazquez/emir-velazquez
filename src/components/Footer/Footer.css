@@ -22,26 +22,50 @@
     white-space: nowrap;
 }
 
-.footerAnchorIcons {
-    display: inline-block;
-    margin: 0 10px 0 0;
+.builtWithCont {
+    display: "inline-block";
+    width: auto;
+    height: 40px;
+    position: relative;
+    padding: 8px 0;
+}
+
+.builtWithWrap {
+    width: 100%;
+    height: 100%;
+}
+ 
+.footerBtnWrapper {
     border-radius: 50%;
     border: 2px solid #FFFFFF;
-    padding: 5px;
-    text-align: center;
+    margin: 18px 10px 0 0;
+    display: inline-block;
     width: 40px;
     height: 40px;
+    position: relative;
+}
+
+.footerAnchorIcons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 7px;
 }
 
 #reactFooter {
-    display: inline-block;
-    margin: 0 0 0 10px;
     border-radius: 50%;
     border: 2px solid #FFFFFF;
-    padding: 5px;
-    text-align: center;
+    margin: 0 0 0 10px;
+    display: inline-block;
     width: 40px;
     height: 40px;
+    position: relative;
 }
 
 #reactLogoRotate {
@@ -57,4 +81,49 @@
   to {
     transform: rotate(359deg);
   }
+}
+
+/* Media Queries Section */
+@media screen and (max-width: 1800px) {
+    #footerContainer {
+        font-size: 16px;
+    }
+
+    .footerBtnWrapper, #reactFooter {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #footerContainer {
+        font-size: 15px;
+    }
+
+    .footerBtnWrapper, #reactFooter {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footerAnchorIcons {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #footerContainer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #footerContainer {
+        font-size: 13px;
+    }
+}
+
+@media screen  and (max-width: 599px) {
+    #footerContainer {
+        font-size: 12px;
+    }
 }

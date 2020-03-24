@@ -35,8 +35,10 @@ class ContactForm extends Component {
                 "user_PsuwnKfcCDVL8Q9Uxn9LO"
             )
             this.resetForm()
+            setTimeout(() => this.setState({ messageSent: "none" }), 3000)
         } else {
             this.setState({ inCompleteBoxes: "block" })
+            setTimeout(() => this.setState({ inCompleteBoxes: "none" }), 3000)
         }
     }
 

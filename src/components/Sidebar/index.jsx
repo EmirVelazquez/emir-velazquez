@@ -62,7 +62,7 @@ const Sidebar = props => {
                                 name="newName"
                                 value={props.newNameVal}
                                 onChange={props.changeNameBoxChange}
-                                placeholder="New Name"
+                                placeholder="Enter Name"
                                 id="changeNameField"
                                 invalid={props.notEmpty}
                                 valid={props.wasSuccess}

@@ -79,3 +79,25 @@
 		 border-bottom-color: #1affff;
 	}
 }
+
+@media screen  and (max-width: 599px) {
+	#backToTopBtn {
+	 	width: 50px !important;
+		height: 50px !important;
+		bottom: 1%;
+	}
+
+	.pyramidSide {
+	 	border-left: 25px solid transparent;
+	 	border-right: 25px solid transparent;
+	 	border-bottom: 45px solid #ccc;
+	}
+
+	.innerSide {
+    	left: -20px;
+    	bottom: -1px;
+    	border-left: 20px solid transparent;
+    	border-right: 20px solid transparent;
+    	border-bottom: 40px solid black;
+	}
+}
